@@ -1,0 +1,13 @@
+*.fastq
+*.fq
+*.bam
+*.sam
+*.log
+*.gz
+__pycache__/
+.DS_Store
+*.rds
+*.rda
+.Rhistory
+.Rproj.user/
+.env
