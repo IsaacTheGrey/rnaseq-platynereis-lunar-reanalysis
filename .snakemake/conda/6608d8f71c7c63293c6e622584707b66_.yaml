@@ -1,6 +1,0 @@
-name: rnaseq
-channels:
-  - bioconda
-  - conda-forge
-dependencies:
-  - trimmomatic

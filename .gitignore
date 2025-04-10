@@ -11,4 +11,24 @@ __pycache__/
 .Rhistory
 .Rproj.user/
 .env
+# Snakemake internals
 .snakemake/
+
+# Conda envs
+*.snakemake/conda/
+.env/
+
+# Logs
+logs/
+*.log
+
+# Output
+data/trimmed/
+data/star/
+data/salmon/
+results/
+
+# Editors & system
+
+*.swp
+

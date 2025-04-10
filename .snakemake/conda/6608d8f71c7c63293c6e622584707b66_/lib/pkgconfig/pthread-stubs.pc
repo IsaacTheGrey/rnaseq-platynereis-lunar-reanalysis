@@ -1,9 +1,0 @@
-prefix=/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/6608d8f71c7c63293c6e622584707b66_
-exec_prefix=${prefix}
-libdir=${exec_prefix}/lib
-
-Name: pthread stubs
-Description: Meta package for pthread symbols - defaults to heavyweight ones if the C runtime does not provide lightweight ones.
-Version: 0.4
-Cflags: 
-Libs: 
