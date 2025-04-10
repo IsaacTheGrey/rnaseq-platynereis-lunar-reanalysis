@@ -1,5 +1,7 @@
 *.fastq
 *.fq
+*.fa
+*.gtf
 *.bam
 *.sam
 *.log
