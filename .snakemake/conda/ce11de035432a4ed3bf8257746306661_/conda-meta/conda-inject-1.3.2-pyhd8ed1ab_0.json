@@ -1,0 +1,105 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge",
+  "constrains": [],
+  "depends": [
+    "python >=3.9.0,<4.0.0",
+    "pyyaml >=6.0.0,<7.0.0"
+  ],
+  "extracted_package_dir": "/home/federico/.conda/pkgs/conda-inject-1.3.2-pyhd8ed1ab_0",
+  "files": [
+    "lib/python3.12/site-packages/conda_inject-1.3.2.dist-info/INSTALLER",
+    "lib/python3.12/site-packages/conda_inject-1.3.2.dist-info/LICENSE",
+    "lib/python3.12/site-packages/conda_inject-1.3.2.dist-info/METADATA",
+    "lib/python3.12/site-packages/conda_inject-1.3.2.dist-info/RECORD",
+    "lib/python3.12/site-packages/conda_inject-1.3.2.dist-info/REQUESTED",
+    "lib/python3.12/site-packages/conda_inject-1.3.2.dist-info/WHEEL",
+    "lib/python3.12/site-packages/conda_inject-1.3.2.dist-info/direct_url.json",
+    "lib/python3.12/site-packages/conda_inject/__init__.py",
+    "lib/python3.12/site-packages/conda_inject/__pycache__/__init__.cpython-312.pyc"
+  ],
+  "fn": "conda-inject-1.3.2-pyhd8ed1ab_0.conda",
+  "license": "MIT",
+  "link": {
+    "source": "/home/federico/.conda/pkgs/conda-inject-1.3.2-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "e52c2a160d6bd0649c9fafdf0c813357",
+  "name": "conda-inject",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/federico/.conda/pkgs/conda-inject-1.3.2-pyhd8ed1ab_0.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/conda_inject-1.3.2.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/conda_inject-1.3.2.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "eb9920e8000c2dbd1ece0495215d62acd7094e2b40bac7c8eaff5e659d9827a1",
+        "sha256_in_prefix": "eb9920e8000c2dbd1ece0495215d62acd7094e2b40bac7c8eaff5e659d9827a1",
+        "size_in_bytes": 1073
+      },
+      {
+        "_path": "site-packages/conda_inject-1.3.2.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "5dfcfe5f210b9b7300ff9028d65a69dae84dbabf709b2cc4c7b01bebd8708182",
+        "sha256_in_prefix": "5dfcfe5f210b9b7300ff9028d65a69dae84dbabf709b2cc4c7b01bebd8708182",
+        "size_in_bytes": 855
+      },
+      {
+        "_path": "site-packages/conda_inject-1.3.2.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "5fc7d8e19d74087253d24e9ec40ced719140ae5ba14d2ed7a6c45eed8133c242",
+        "sha256_in_prefix": "5fc7d8e19d74087253d24e9ec40ced719140ae5ba14d2ed7a6c45eed8133c242",
+        "size_in_bytes": 739
+      },
+      {
+        "_path": "site-packages/conda_inject-1.3.2.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/conda_inject-1.3.2.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "b0ff78e83ee31421de373e48ab87cbe0bbbe3eb5ab16c81f2d76db91c8886708",
+        "sha256_in_prefix": "b0ff78e83ee31421de373e48ab87cbe0bbbe3eb5ab16c81f2d76db91c8886708",
+        "size_in_bytes": 88
+      },
+      {
+        "_path": "site-packages/conda_inject-1.3.2.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "0742c39835a691fd05d3babd6f1aa62dd54ef969ca60ec503af3791b64f4e5d3",
+        "sha256_in_prefix": "0742c39835a691fd05d3babd6f1aa62dd54ef969ca60ec503af3791b64f4e5d3",
+        "size_in_bytes": 108
+      },
+      {
+        "_path": "site-packages/conda_inject/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "d628feda7d5f41ae8dea261f7625d41bb436a3c0bc0ab68f97733cb5c053dbe3",
+        "sha256_in_prefix": "d628feda7d5f41ae8dea261f7625d41bb436a3c0bc0ab68f97733cb5c053dbe3",
+        "size_in_bytes": 7168
+      },
+      {
+        "_path": "lib/python3.12/site-packages/conda_inject/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "conda-inject==1.3.2=pyhd8ed1ab_0",
+  "sha256": "c1b355af599e548c4b69129f4d723ddcdb9f6defb939985731499cee2e26a578",
+  "size": 10327,
+  "subdir": "noarch",
+  "timestamp": 1717043667000,
+  "url": "https://conda.anaconda.org/conda-forge/noarch/conda-inject-1.3.2-pyhd8ed1ab_0.conda",
+  "version": "1.3.2"
+}

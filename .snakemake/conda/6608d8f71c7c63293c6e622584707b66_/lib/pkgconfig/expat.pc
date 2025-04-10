@@ -1,0 +1,13 @@
+prefix=/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/6608d8f71c7c63293c6e622584707b66_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: expat
+Version: 2.7.0
+Description: expat XML parser
+URL: https://libexpat.github.io/
+Libs: -L${libdir} -lexpat
+Libs.private: -lm
+Cflags: -I${includedir}
+Cflags.private: -DXML_STATIC

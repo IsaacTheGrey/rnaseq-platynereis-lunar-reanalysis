@@ -1,0 +1,76 @@
+{
+  "build": "hb9d3cd8_1003",
+  "build_number": 1003,
+  "channel": "https://conda.anaconda.org/conda-forge",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13"
+  ],
+  "extracted_package_dir": "/home/federico/.conda/pkgs/xorg-inputproto-2.3.2-hb9d3cd8_1003",
+  "files": [
+    "include/X11/extensions/XI.h",
+    "include/X11/extensions/XI2.h",
+    "include/X11/extensions/XI2proto.h",
+    "include/X11/extensions/XIproto.h",
+    "lib/pkgconfig/inputproto.pc"
+  ],
+  "fn": "xorg-inputproto-2.3.2-hb9d3cd8_1003.conda",
+  "license": "MIT",
+  "link": {
+    "source": "/home/federico/.conda/pkgs/xorg-inputproto-2.3.2-hb9d3cd8_1003",
+    "type": 1
+  },
+  "md5": "32623b33f2047dbc9ae2f2e8fd3880e9",
+  "name": "xorg-inputproto",
+  "package_tarball_full_path": "/home/federico/.conda/pkgs/xorg-inputproto-2.3.2-hb9d3cd8_1003.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/X11/extensions/XI.h",
+        "path_type": "hardlink",
+        "sha256": "c456e8e0f6a03f7f5bf505d7626791f97856db7edc42fa806876b63356e0e272",
+        "sha256_in_prefix": "c456e8e0f6a03f7f5bf505d7626791f97856db7edc42fa806876b63356e0e272",
+        "size_in_bytes": 9823
+      },
+      {
+        "_path": "include/X11/extensions/XI2.h",
+        "path_type": "hardlink",
+        "sha256": "b879bb384dbbf151099fb28044defa5ea8c832bbd6dab8ae0ece0f410fe19f08",
+        "sha256_in_prefix": "b879bb384dbbf151099fb28044defa5ea8c832bbd6dab8ae0ece0f410fe19f08",
+        "size_in_bytes": 10542
+      },
+      {
+        "_path": "include/X11/extensions/XI2proto.h",
+        "path_type": "hardlink",
+        "sha256": "f91fbf973eaa44480197bdf7eb189d2a839f4be8145f5e108d2f0fddd44f1b4a",
+        "sha256_in_prefix": "f91fbf973eaa44480197bdf7eb189d2a839f4be8145f5e108d2f0fddd44f1b4a",
+        "size_in_bytes": 37518
+      },
+      {
+        "_path": "include/X11/extensions/XIproto.h",
+        "path_type": "hardlink",
+        "sha256": "e2ae818dca0a9fa077cd5ffd9afbe057ba4cf28c189c6e0ac94462262b91bf63",
+        "sha256_in_prefix": "e2ae818dca0a9fa077cd5ffd9afbe057ba4cf28c189c6e0ac94462262b91bf63",
+        "size_in_bytes": 42622
+      },
+      {
+        "_path": "lib/pkgconfig/inputproto.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/xorg-inputproto_1726802395288/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "d1cf8a4ed17c75d7b3fee9e69885076235d17128ebf7384d383a1e93f63323da",
+        "sha256_in_prefix": "7ea4b6886757342961bb6a1eceb96e5244838412ea41f9ed6db744ab3d07ae7e",
+        "size_in_bytes": 435
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "77eea289f9d3fa753a290f988533c842694b826fe1900abd6d7b142c528512ba",
+  "size": 22320,
+  "subdir": "linux-64",
+  "timestamp": 1726802558000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/xorg-inputproto-2.3.2-hb9d3cd8_1003.conda",
+  "version": "2.3.2"
+}

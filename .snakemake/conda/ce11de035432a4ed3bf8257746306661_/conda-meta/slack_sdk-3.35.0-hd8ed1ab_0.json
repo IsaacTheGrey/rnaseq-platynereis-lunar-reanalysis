@@ -1,0 +1,33 @@
+{
+  "build": "hd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge",
+  "constrains": [],
+  "depends": [
+    "slack-sdk 3.35.0 pyhd8ed1ab_0"
+  ],
+  "extracted_package_dir": "/home/federico/.conda/pkgs/slack_sdk-3.35.0-hd8ed1ab_0",
+  "files": [],
+  "fn": "slack_sdk-3.35.0-hd8ed1ab_0.conda",
+  "license": "MIT",
+  "link": {
+    "source": "/home/federico/.conda/pkgs/slack_sdk-3.35.0-hd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "61be145f841e293c2b0cea5a36e525cc",
+  "name": "slack_sdk",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/federico/.conda/pkgs/slack_sdk-3.35.0-hd8ed1ab_0.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "slack_sdk==3.35.0=hd8ed1ab_0",
+  "sha256": "ae9f8702e331fde4d226768492c0699dea9c8a14a807b2b62ae67c769ff97a53",
+  "size": 6765,
+  "subdir": "noarch",
+  "timestamp": 1742233648000,
+  "url": "https://conda.anaconda.org/conda-forge/noarch/slack_sdk-3.35.0-hd8ed1ab_0.conda",
+  "version": "3.35.0"
+}

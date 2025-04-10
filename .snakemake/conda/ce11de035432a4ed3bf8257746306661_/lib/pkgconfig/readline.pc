@@ -1,0 +1,12 @@
+prefix=/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/ce11de035432a4ed3bf8257746306661_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Readline
+Description: Gnu Readline library for command line editing
+URL: http://tiswww.cwru.edu/php/chet/readline/rltop.html
+Version: 8.2
+Requires.private: tinfo
+Libs: -L${libdir} -lreadline
+Cflags: -I${includedir}

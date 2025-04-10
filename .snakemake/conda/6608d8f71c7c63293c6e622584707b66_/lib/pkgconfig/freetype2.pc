@@ -1,0 +1,14 @@
+prefix=/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/6608d8f71c7c63293c6e622584707b66_
+exec_prefix=/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/6608d8f71c7c63293c6e622584707b66_
+libdir=/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/6608d8f71c7c63293c6e622584707b66_/lib
+includedir=/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/6608d8f71c7c63293c6e622584707b66_/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 24.3.18
+Requires: 
+Requires.private: zlib, libpng
+Libs: -L/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/6608d8f71c7c63293c6e622584707b66_/lib -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2

@@ -1,0 +1,155 @@
+import os
+
+# Load configuration
+configfile: "../config.yaml"
+
+# Determine sample types
+SAMPLES_PE, = glob_wildcards("data/fastq/{sample}_R1.fastq.gz")
+SAMPLES_SE, = glob_wildcards("data/fastq/{sample}.fastq.gz")
+
+rule all:
+    input:
+        expand("data/star/{{sample}}.Aligned.sortedByCoord.out.bam", sample=SAMPLES_PE + SAMPLES_SE),
+        expand("data/salmon/{{sample}}/quant.sf", sample=SAMPLES_PE + SAMPLES_SE),
+        "results/multiqc/multiqc_report.html"
+
+# === INDEX RULES ===
+rule build_star_index:
+    input:
+        genome=config["genome_fasta"],
+        gtf=config["gtf"]
+    output:
+        touch(os.path.join(config["star_index"], "SA"))
+    threads: config["threads_star"]
+    conda:
+        "../env/star.yml"
+    log:
+        "logs/star_index.log"
+    shell:
+        """
+        mkdir -p {config[star_index]}
+        STAR --runThreadN {threads} \
+             --runMode genomeGenerate \
+             --genomeDir {config[star_index]} \
+             --genomeFastaFiles {input.genome} \
+             --sjdbGTFfile {input.gtf} \
+             --sjdbOverhang 100 &> {log}
+        touch {output}
+        """
+
+rule build_salmon_index:
+    input:
+        config["transcriptome"]
+    output:
+        touch(os.path.join(config["salmon_index"], "complete_ref_transcripts.fa"))
+    threads: config["threads_salmon"]
+    conda:
+        "../env/salmon.yml"
+    log:
+        "logs/salmon_index.log"
+    shell:
+        """
+        mkdir -p {config[salmon_index]}
+        salmon index -t {input} -i {config[salmon_index]} &> {log}
+        cp {input} {output}
+        """
+
+# === TRIMMING ===
+rule trim_single_end:
+    input:
+        fq="data/fastq/{sample}.fastq.gz"
+    output:
+        trimmed="data/trimmed/{sample}_trimmed.fastq.gz"
+    threads: config["threads_trimming"]
+    conda:
+        "../env/trimmomatic.yml"
+    log:
+        "logs/trimming/{sample}_se.log"
+    shell:
+        """
+        trimmomatic SE -threads {threads} -phred{config[phred_encoding]} \
+        {input.fq} {output.trimmed} \
+        LEADING:{config[leading]} TRAILING:{config[trailing]} SLIDINGWINDOW:{config[sliding_window]} MINLEN:{config[min_length]} &> {log}
+        """
+
+rule trim_paired_end:
+    input:
+        r1="data/fastq/{sample}_R1.fastq.gz",
+        r2="data/fastq/{sample}_R2.fastq.gz"
+    output:
+        r1_paired="data/trimmed/{sample}_R1_paired.fastq.gz",
+        r1_unpaired="data/trimmed/{sample}_R1_unpaired.fastq.gz",
+        r2_paired="data/trimmed/{sample}_R2_paired.fastq.gz",
+        r2_unpaired="data/trimmed/{sample}_R2_unpaired.fastq.gz"
+    threads: config["threads_trimming"]
+    conda:
+        "../env/trimmomatic.yml"
+    log:
+        "logs/trimming/{sample}_pe.log"
+    shell:
+        """
+        trimmomatic PE -threads {threads} -phred{config[phred_encoding]} \
+        {input.r1} {input.r2} \
+        {output.r1_paired} {output.r1_unpaired} \
+        {output.r2_paired} {output.r2_unpaired} \
+        LEADING:{config[leading]} TRAILING:{config[trailing]} SLIDINGWINDOW:{config[sliding_window]} MINLEN:{config[min_length]} &> {log}
+        """
+
+# === STAR ALIGNMENT ===
+rule star_align:
+    input:
+        index=os.path.join(config["star_index"], "SA"),
+        fq=lambda wildcards: f"data/trimmed/{wildcards.sample}_trimmed.fastq.gz" if os.path.exists(f"data/fastq/{wildcards.sample}.fastq.gz") else [f"data/trimmed/{wildcards.sample}_R1_paired.fastq.gz", f"data/trimmed/{wildcards.sample}_R2_paired.fastq.gz"]
+    output:
+        bam="data/star/{sample}.Aligned.sortedByCoord.out.bam"
+    threads: config["threads_star"]
+    conda:
+        "../env/star.yml"
+    log:
+        "logs/star/{sample}.log"
+    shell:
+        """
+        STAR --runThreadN {threads} \
+             --genomeDir {config[star_index]} \
+             --readFilesIn {input.fq} \
+             --readFilesCommand zcat \
+             --outFileNamePrefix data/star/{wildcards.sample}. \
+             --outSAMtype BAM SortedByCoordinate &> {log}
+        """
+
+# === SALMON QUANT ===
+rule salmon_quant:
+    input:
+        index=os.path.join(config["salmon_index"], "complete_ref_transcripts.fa"),
+        fq=lambda wildcards: f"data/trimmed/{wildcards.sample}_trimmed.fastq.gz" if os.path.exists(f"data/fastq/{wildcards.sample}.fastq.gz") else [f"data/trimmed/{wildcards.sample}_R1_paired.fastq.gz", f"data/trimmed/{wildcards.sample}_R2_paired.fastq.gz"]
+    output:
+        quant="data/salmon/{sample}/quant.sf"
+    threads: config["threads_salmon"]
+    conda:
+        "../env/salmon.yml"
+    log:
+        "logs/salmon/{sample}.log"
+    shell:
+        """
+        salmon quant -i {config[salmon_index]} -l A \
+        {'-r ' + input.fq if isinstance(input.fq, str) else '-1 ' + input.fq[0] + ' -2 ' + input.fq[1]} \
+        -p {threads} -o data/salmon/{wildcards.sample} &> {log}
+        """
+
+# === MULTIQC ===
+rule multiqc:
+    input:
+        expand("logs/trimming/{{sample}}_se.log", sample=SAMPLES_SE) +
+        expand("logs/trimming/{{sample}}_pe.log", sample=SAMPLES_PE) +
+        expand("logs/star/{{sample}}.log", sample=SAMPLES_PE + SAMPLES_SE) +
+        expand("logs/salmon/{{sample}}.log", sample=SAMPLES_PE + SAMPLES_SE)
+    output:
+        html="results/multiqc/multiqc_report.html"
+    conda:
+        "../env/multiqc.yml"
+    shell:
+        """
+        mkdir -p results/multiqc
+        multiqc logs -o results/multiqc
+        """
+

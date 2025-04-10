@@ -1,0 +1,59 @@
+{
+  "build": "hf5ce1d7_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge",
+  "constrains": [],
+  "depends": [
+    "typing_extensions ==4.13.1 pyh29332c3_0"
+  ],
+  "extracted_package_dir": "/home/federico/.conda/pkgs/typing-extensions-4.13.1-hf5ce1d7_0",
+  "files": [
+    "etc/conda/test-files/typing-extensions/1/src/_typed_dict_test_helper.py",
+    "etc/conda/test-files/typing-extensions/1/src/test_typing_extensions.py",
+    "etc/conda/test-files/typing-extensions/1/src/typing_extensions.py"
+  ],
+  "fn": "typing-extensions-4.13.1-hf5ce1d7_0.conda",
+  "license": "PSF-2.0",
+  "link": {
+    "source": "/home/federico/.conda/pkgs/typing-extensions-4.13.1-hf5ce1d7_0",
+    "type": 1
+  },
+  "md5": "e37cf790f710cf72fd13dcb6b2d4370c",
+  "name": "typing-extensions",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/federico/.conda/pkgs/typing-extensions-4.13.1-hf5ce1d7_0.conda",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "etc/conda/test-files/typing-extensions/1/src/_typed_dict_test_helper.py",
+        "path_type": "hardlink",
+        "sha256": "d522d5308180d08c7775347f5cc7c842c52f3791d5b2d3c2ff7664ebc64015e9",
+        "sha256_in_prefix": "d522d5308180d08c7775347f5cc7c842c52f3791d5b2d3c2ff7664ebc64015e9",
+        "size_in_bytes": 564
+      },
+      {
+        "_path": "etc/conda/test-files/typing-extensions/1/src/test_typing_extensions.py",
+        "path_type": "hardlink",
+        "sha256": "7d386773e3cb5783dc0146f9e978ef57af865ab29a77cfb26b19d49d61388cc4",
+        "sha256_in_prefix": "7d386773e3cb5783dc0146f9e978ef57af865ab29a77cfb26b19d49d61388cc4",
+        "size_in_bytes": 317212
+      },
+      {
+        "_path": "etc/conda/test-files/typing-extensions/1/src/typing_extensions.py",
+        "path_type": "hardlink",
+        "sha256": "ca64969428756d8ec40fcdf6a4fa6a5718cebb40c19f4165e2dcff9c2ac21557",
+        "sha256_in_prefix": "ca64969428756d8ec40fcdf6a4fa6a5718cebb40c19f4165e2dcff9c2ac21557",
+        "size_in_bytes": 172141
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "typing-extensions==4.13.1=hf5ce1d7_0",
+  "sha256": "f38c8a4cb27155a3c0d2853683569b1b1b38b31aa17195c23789367868d2125e",
+  "size": 89685,
+  "subdir": "noarch",
+  "timestamp": 1743820059000,
+  "url": "https://conda.anaconda.org/conda-forge/noarch/typing-extensions-4.13.1-hf5ce1d7_0.conda",
+  "version": "4.13.1"
+}

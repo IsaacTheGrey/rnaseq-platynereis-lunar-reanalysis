@@ -1,0 +1,15 @@
+# tk pkg-config source file
+
+prefix=/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/6608d8f71c7c63293c6e622584707b66_
+exec_prefix=/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/6608d8f71c7c63293c6e622584707b66_
+libdir=/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/6608d8f71c7c63293c6e622584707b66_/lib
+includedir=${prefix}/include
+
+Name: The Tk Toolkit
+Description: Tk is a cross-platform graphical user interface toolkit, the standard GUI not only for Tcl, but for many other dynamic languages as well.
+URL: https://www.tcl-lang.org/
+Version: 8.6.13
+Requires: tcl >= 8.6
+Libs: -L${libdir} -ltk8.6 -ltkstub8.6
+Libs.private:  -lX11
+Cflags: -I${includedir}

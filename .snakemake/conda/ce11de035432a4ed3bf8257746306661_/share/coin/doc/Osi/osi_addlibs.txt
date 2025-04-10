@@ -1,0 +1,1 @@
+-L/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/ce11de035432a4ed3bf8257746306661_/lib -lOsi

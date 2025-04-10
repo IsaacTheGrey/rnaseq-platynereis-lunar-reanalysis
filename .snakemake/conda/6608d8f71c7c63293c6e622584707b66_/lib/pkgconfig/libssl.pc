@@ -1,0 +1,11 @@
+prefix=/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/6608d8f71c7c63293c6e622584707b66_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include 
+
+Name: OpenSSL-libssl
+Description: Secure Sockets Layer and cryptography libraries
+Version: 3.5.0
+Requires.private: libcrypto
+Libs: -L${libdir} -lssl
+Cflags: -I${includedir}

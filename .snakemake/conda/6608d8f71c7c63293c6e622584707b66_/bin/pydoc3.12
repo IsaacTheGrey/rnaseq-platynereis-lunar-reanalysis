@@ -1,0 +1,5 @@
+#!/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/6608d8f71c7c63293c6e622584707b66_/bin/python3.12
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

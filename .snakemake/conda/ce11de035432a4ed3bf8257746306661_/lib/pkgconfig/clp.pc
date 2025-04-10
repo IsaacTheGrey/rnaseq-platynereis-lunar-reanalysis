@@ -1,0 +1,13 @@
+prefix=/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/ce11de035432a4ed3bf8257746306661_
+exec_prefix=/home/federico/projects/rnaseq-platynereis-lunar-reanalysis/.snakemake/conda/ce11de035432a4ed3bf8257746306661_
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/coin
+
+Name: CLP
+Description: COIN-OR Linear Programming Solver
+URL: https://projects.coin-or.org/Clp
+Version: 1.17.10
+Libs: -L${libdir} -lClpSolver -lClp 
+Libs.private: 
+Cflags: -I${includedir}
+Requires.private: coinutils 

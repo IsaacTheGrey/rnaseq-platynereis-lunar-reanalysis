@@ -1,0 +1,87 @@
+{
+  "build": "3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/bioconda",
+  "constrains": [],
+  "depends": [
+    "java-jdk"
+  ],
+  "extracted_package_dir": "/home/federico/.conda/pkgs/trimmomatic-0.36-3",
+  "files": [
+    "bin/trimmomatic",
+    "share/trimmomatic",
+    "share/trimmomatic-0.36-3/LICENSE",
+    "share/trimmomatic-0.36-3/adapters/NexteraPE-PE.fa",
+    "share/trimmomatic-0.36-3/adapters/TruSeq2-PE.fa",
+    "share/trimmomatic-0.36-3/adapters/TruSeq2-SE.fa",
+    "share/trimmomatic-0.36-3/adapters/TruSeq3-PE-2.fa",
+    "share/trimmomatic-0.36-3/adapters/TruSeq3-PE.fa",
+    "share/trimmomatic-0.36-3/adapters/TruSeq3-SE.fa",
+    "share/trimmomatic-0.36-3/trimmomatic",
+    "share/trimmomatic-0.36-3/trimmomatic.jar"
+  ],
+  "fn": "trimmomatic-0.36-3.tar.bz2",
+  "license": "GPLv3",
+  "link": {
+    "source": "/home/federico/.conda/pkgs/trimmomatic-0.36-3",
+    "type": 1
+  },
+  "md5": "c1c608c748c1bd17fb462ee3f9365260",
+  "name": "trimmomatic",
+  "package_tarball_full_path": "/home/federico/.conda/pkgs/trimmomatic-0.36-3.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/trimmomatic",
+        "path_type": "softlink"
+      },
+      {
+        "_path": "share/trimmomatic",
+        "path_type": "softlink"
+      },
+      {
+        "_path": "share/trimmomatic-0.36-3/LICENSE",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/trimmomatic-0.36-3/adapters/NexteraPE-PE.fa",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/trimmomatic-0.36-3/adapters/TruSeq2-PE.fa",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/trimmomatic-0.36-3/adapters/TruSeq2-SE.fa",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/trimmomatic-0.36-3/adapters/TruSeq3-PE-2.fa",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/trimmomatic-0.36-3/adapters/TruSeq3-PE.fa",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/trimmomatic-0.36-3/adapters/TruSeq3-SE.fa",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/trimmomatic-0.36-3/trimmomatic",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "share/trimmomatic-0.36-3/trimmomatic.jar",
+        "path_type": "hardlink"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "trimmomatic==0.36=3",
+  "sha256": "da688de370e849edcc627246c444b44fb74ea1cd45c9a8c58cb6290b8585b948",
+  "size": 134686,
+  "subdir": "linux-64",
+  "url": "https://conda.anaconda.org/bioconda/linux-64/trimmomatic-0.36-3.tar.bz2",
+  "version": "0.36"
+}

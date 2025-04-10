@@ -1,0 +1,2473 @@
+{
+  "build": "pyhdfd78af_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda",
+  "constrains": [],
+  "depends": [
+    "appdirs",
+    "conda-inject >=1.3.1,<2.0",
+    "configargparse",
+    "connection_pool >=0.0.3",
+    "docutils",
+    "dpath >=2.1.6,<3.0.0",
+    "gitpython",
+    "humanfriendly",
+    "immutables",
+    "jinja2 >=3.0,<4.0",
+    "jsonschema",
+    "nbformat",
+    "packaging",
+    "psutil",
+    "pulp >=2.3.1,<3.1",
+    "python >=3.11,<3.13",
+    "pyyaml",
+    "requests >=2.8.1,<3.0",
+    "reretry",
+    "smart_open >=4.0,<8.0",
+    "snakemake-interface-common >=1.17.0,<2.0",
+    "snakemake-interface-executor-plugins >=9.3.2,<10.0",
+    "snakemake-interface-logger-plugins >=1.1.0,<2.0.0",
+    "snakemake-interface-report-plugins >=1.1.0,<2.0.0",
+    "snakemake-interface-storage-plugins >=4.1.0,<5.0",
+    "tabulate",
+    "throttler",
+    "wrapt",
+    "yte >=1.5.5,<2.0"
+  ],
+  "extracted_package_dir": "/home/federico/.conda/pkgs/snakemake-minimal-9.1.9-pyhdfd78af_0",
+  "files": [
+    "lib/python3.12/site-packages/snakemake-0.0.0.dist-info/INSTALLER",
+    "lib/python3.12/site-packages/snakemake-0.0.0.dist-info/METADATA",
+    "lib/python3.12/site-packages/snakemake-0.0.0.dist-info/RECORD",
+    "lib/python3.12/site-packages/snakemake-0.0.0.dist-info/REQUESTED",
+    "lib/python3.12/site-packages/snakemake-0.0.0.dist-info/WHEEL",
+    "lib/python3.12/site-packages/snakemake-0.0.0.dist-info/direct_url.json",
+    "lib/python3.12/site-packages/snakemake-0.0.0.dist-info/entry_points.txt",
+    "lib/python3.12/site-packages/snakemake-0.0.0.dist-info/licenses/LICENSE.md",
+    "lib/python3.12/site-packages/snakemake-0.0.0.dist-info/top_level.txt",
+    "lib/python3.12/site-packages/snakemake/__init__.py",
+    "lib/python3.12/site-packages/snakemake/__main__.py",
+    "lib/python3.12/site-packages/snakemake/_version.py",
+    "lib/python3.12/site-packages/snakemake/api.py",
+    "lib/python3.12/site-packages/snakemake/assets/__init__.py",
+    "lib/python3.12/site-packages/snakemake/assets/data/@types-clone/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/@types-estree/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/array-flat-polyfill/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/clone/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/commons-math/LICENSE.txt",
+    "lib/python3.12/site-packages/snakemake/assets/data/commons-math/NOTICE.txt",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-array/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-color/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-contour/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-delaunay/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-dispatch/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-dsv/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-force/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-format/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-geo-projection/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-geo/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-hierarchy/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-interpolate/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-path/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-quadtree/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-regression/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-scale/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-shape/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-time-format/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-time/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/d3-timer/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/delaunator/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/esprima/LICENSE.BSD",
+    "lib/python3.12/site-packages/snakemake/assets/data/fabric/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/fast-deep-equal/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/fast-json-patch/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/fast-json-stable-stringify/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/hashlru/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/heroicons/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/json-stringify-pretty-compact/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/prop-types/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/prop-types/prop-types.min.js",
+    "lib/python3.12/site-packages/snakemake/assets/data/pygments/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/quickselect/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/react/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/react/react-dom.production.min.js",
+    "lib/python3.12/site-packages/snakemake/assets/data/react/react.production.min.js",
+    "lib/python3.12/site-packages/snakemake/assets/data/regression/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/science/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/semver/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/shapefile/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/snakemake/LICENSE.md",
+    "lib/python3.12/site-packages/snakemake/assets/data/tailwindcss/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/tailwindcss/tailwind.css",
+    "lib/python3.12/site-packages/snakemake/assets/data/topojson-client/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/vega-embed/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/vega-embed/vega-embed.js",
+    "lib/python3.12/site-packages/snakemake/assets/data/vega-lite/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/vega-lite/vega-lite.js",
+    "lib/python3.12/site-packages/snakemake/assets/data/vega-schema-url-parser/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/vega-themes/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/vega-tooltip/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/vega/LICENSE",
+    "lib/python3.12/site-packages/snakemake/assets/data/vega/vega.js",
+    "lib/python3.12/site-packages/snakemake/benchmark.py",
+    "lib/python3.12/site-packages/snakemake/caching/__init__.py",
+    "lib/python3.12/site-packages/snakemake/caching/hash.py",
+    "lib/python3.12/site-packages/snakemake/caching/local.py",
+    "lib/python3.12/site-packages/snakemake/caching/storage.py",
+    "lib/python3.12/site-packages/snakemake/checkpoints.py",
+    "lib/python3.12/site-packages/snakemake/cli.py",
+    "lib/python3.12/site-packages/snakemake/common/__init__.py",
+    "lib/python3.12/site-packages/snakemake/common/argparse.py",
+    "lib/python3.12/site-packages/snakemake/common/configfile.py",
+    "lib/python3.12/site-packages/snakemake/common/git.py",
+    "lib/python3.12/site-packages/snakemake/common/prefix_lookup.py",
+    "lib/python3.12/site-packages/snakemake/common/tbdstring.py",
+    "lib/python3.12/site-packages/snakemake/common/tests/__init__.py",
+    "lib/python3.12/site-packages/snakemake/common/tests/testcases/__init__.py",
+    "lib/python3.12/site-packages/snakemake/common/tests/testcases/groups/Snakefile",
+    "lib/python3.12/site-packages/snakemake/common/tests/testcases/groups/__init__.py",
+    "lib/python3.12/site-packages/snakemake/common/tests/testcases/groups/caption.rst",
+    "lib/python3.12/site-packages/snakemake/common/tests/testcases/simple/Snakefile",
+    "lib/python3.12/site-packages/snakemake/common/tests/testcases/simple/__init__.py",
+    "lib/python3.12/site-packages/snakemake/common/tests/testcases/simple/caption.rst",
+    "lib/python3.12/site-packages/snakemake/common/typing.py",
+    "lib/python3.12/site-packages/snakemake/common/workdir_handler.py",
+    "lib/python3.12/site-packages/snakemake/cwl.py",
+    "lib/python3.12/site-packages/snakemake/dag.py",
+    "lib/python3.12/site-packages/snakemake/decorators.py",
+    "lib/python3.12/site-packages/snakemake/deployment/__init__.py",
+    "lib/python3.12/site-packages/snakemake/deployment/conda.py",
+    "lib/python3.12/site-packages/snakemake/deployment/containerize.py",
+    "lib/python3.12/site-packages/snakemake/deployment/env_modules.py",
+    "lib/python3.12/site-packages/snakemake/deployment/singularity.py",
+    "lib/python3.12/site-packages/snakemake/exceptions.py",
+    "lib/python3.12/site-packages/snakemake/executors/__init__.py",
+    "lib/python3.12/site-packages/snakemake/executors/dryrun.py",
+    "lib/python3.12/site-packages/snakemake/executors/google_lifesciences_helper.py",
+    "lib/python3.12/site-packages/snakemake/executors/jobscript.sh",
+    "lib/python3.12/site-packages/snakemake/executors/local.py",
+    "lib/python3.12/site-packages/snakemake/executors/touch.py",
+    "lib/python3.12/site-packages/snakemake/gui.html",
+    "lib/python3.12/site-packages/snakemake/gui.py",
+    "lib/python3.12/site-packages/snakemake/io/__init__.py",
+    "lib/python3.12/site-packages/snakemake/io/flags/__init__.py",
+    "lib/python3.12/site-packages/snakemake/io/flags/access_patterns.py",
+    "lib/python3.12/site-packages/snakemake/io/fmt.py",
+    "lib/python3.12/site-packages/snakemake/ioflags.py",
+    "lib/python3.12/site-packages/snakemake/ioutils/__init__.py",
+    "lib/python3.12/site-packages/snakemake/ioutils/branch.py",
+    "lib/python3.12/site-packages/snakemake/ioutils/collect.py",
+    "lib/python3.12/site-packages/snakemake/ioutils/evaluate.py",
+    "lib/python3.12/site-packages/snakemake/ioutils/exists.py",
+    "lib/python3.12/site-packages/snakemake/ioutils/input.py",
+    "lib/python3.12/site-packages/snakemake/ioutils/lookup.py",
+    "lib/python3.12/site-packages/snakemake/ioutils/rule_items_proxy.py",
+    "lib/python3.12/site-packages/snakemake/ioutils/subpath.py",
+    "lib/python3.12/site-packages/snakemake/jobs.py",
+    "lib/python3.12/site-packages/snakemake/linting/__init__.py",
+    "lib/python3.12/site-packages/snakemake/linting/links.py",
+    "lib/python3.12/site-packages/snakemake/linting/rules.py",
+    "lib/python3.12/site-packages/snakemake/linting/snakefiles.py",
+    "lib/python3.12/site-packages/snakemake/logging.py",
+    "lib/python3.12/site-packages/snakemake/modules.py",
+    "lib/python3.12/site-packages/snakemake/notebook.py",
+    "lib/python3.12/site-packages/snakemake/output_index.py",
+    "lib/python3.12/site-packages/snakemake/parser.py",
+    "lib/python3.12/site-packages/snakemake/path_modifier.py",
+    "lib/python3.12/site-packages/snakemake/persistence.py",
+    "lib/python3.12/site-packages/snakemake/profiles.py",
+    "lib/python3.12/site-packages/snakemake/remote/AzBlob.py",
+    "lib/python3.12/site-packages/snakemake/remote/EGA.py",
+    "lib/python3.12/site-packages/snakemake/remote/FTP.py",
+    "lib/python3.12/site-packages/snakemake/remote/GS.py",
+    "lib/python3.12/site-packages/snakemake/remote/HTTP.py",
+    "lib/python3.12/site-packages/snakemake/remote/NCBI.py",
+    "lib/python3.12/site-packages/snakemake/remote/S3.py",
+    "lib/python3.12/site-packages/snakemake/remote/S3Mocked.py",
+    "lib/python3.12/site-packages/snakemake/remote/SFTP.py",
+    "lib/python3.12/site-packages/snakemake/remote/XRootD.py",
+    "lib/python3.12/site-packages/snakemake/remote/__init__.py",
+    "lib/python3.12/site-packages/snakemake/remote/dropbox.py",
+    "lib/python3.12/site-packages/snakemake/remote/gfal.py",
+    "lib/python3.12/site-packages/snakemake/remote/gridftp.py",
+    "lib/python3.12/site-packages/snakemake/remote/iRODS.py",
+    "lib/python3.12/site-packages/snakemake/remote/webdav.py",
+    "lib/python3.12/site-packages/snakemake/remote/zenodo.py",
+    "lib/python3.12/site-packages/snakemake/report.css",
+    "lib/python3.12/site-packages/snakemake/report/__init__.py",
+    "lib/python3.12/site-packages/snakemake/report/common.py",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/__init__.py",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/common.py",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__init__.py",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/categories.py",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/common.py",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/configfiles.py",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/packages.py",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/results.py",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/rulegraph.py",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/rules.py",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/runtimes.py",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/timeline.py",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/__init__.py",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/__init__.py",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/abstract_menu.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/abstract_results.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/abstract_view_manager.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/app.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/breadcrumbs.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/button.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/category.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/common.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/content.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/icon.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/list_heading.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/list_item.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/menu.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/navbar.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/report_info.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/result_info.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/result_view_button.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/rule_graph.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/rule_info.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/search_results.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/stats.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/subcategory.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/toggle.js",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/index.html.jinja2",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/logo.svg",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/style.css",
+    "lib/python3.12/site-packages/snakemake/report/rulegraph_spec.py",
+    "lib/python3.12/site-packages/snakemake/resources.py",
+    "lib/python3.12/site-packages/snakemake/ruleinfo.py",
+    "lib/python3.12/site-packages/snakemake/rules.py",
+    "lib/python3.12/site-packages/snakemake/scheduler.py",
+    "lib/python3.12/site-packages/snakemake/script/__init__.py",
+    "lib/python3.12/site-packages/snakemake/settings/__init__.py",
+    "lib/python3.12/site-packages/snakemake/settings/enums.py",
+    "lib/python3.12/site-packages/snakemake/settings/types.py",
+    "lib/python3.12/site-packages/snakemake/shell.py",
+    "lib/python3.12/site-packages/snakemake/snakemake.code-workspace",
+    "lib/python3.12/site-packages/snakemake/sourcecache.py",
+    "lib/python3.12/site-packages/snakemake/spawn_jobs.py",
+    "lib/python3.12/site-packages/snakemake/storage.py",
+    "lib/python3.12/site-packages/snakemake/target_jobs.py",
+    "lib/python3.12/site-packages/snakemake/template_rendering/__init__.py",
+    "lib/python3.12/site-packages/snakemake/template_rendering/jinja2.py",
+    "lib/python3.12/site-packages/snakemake/template_rendering/yte.py",
+    "lib/python3.12/site-packages/snakemake/unit_tests/__init__.py",
+    "lib/python3.12/site-packages/snakemake/unit_tests/templates/__init__.py",
+    "lib/python3.12/site-packages/snakemake/unit_tests/templates/common.py.jinja2",
+    "lib/python3.12/site-packages/snakemake/unit_tests/templates/ruletest.py.jinja2",
+    "lib/python3.12/site-packages/snakemake/utils.py",
+    "lib/python3.12/site-packages/snakemake/workflow.py",
+    "lib/python3.12/site-packages/snakemake/wrapper.py",
+    "lib/python3.12/site-packages/snakemake/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/__main__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/_version.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/api.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/assets/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/benchmark.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/caching/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/caching/__pycache__/hash.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/caching/__pycache__/local.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/caching/__pycache__/storage.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/checkpoints.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/cli.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/common/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/common/__pycache__/argparse.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/common/__pycache__/configfile.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/common/__pycache__/git.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/common/__pycache__/prefix_lookup.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/common/__pycache__/tbdstring.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/common/tests/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/common/tests/testcases/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/common/tests/testcases/groups/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/common/tests/testcases/simple/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/common/__pycache__/typing.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/common/__pycache__/workdir_handler.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/cwl.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/dag.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/decorators.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/deployment/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/deployment/__pycache__/conda.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/deployment/__pycache__/containerize.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/deployment/__pycache__/env_modules.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/deployment/__pycache__/singularity.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/exceptions.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/executors/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/executors/__pycache__/dryrun.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/executors/__pycache__/google_lifesciences_helper.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/executors/__pycache__/local.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/executors/__pycache__/touch.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/gui.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/io/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/io/flags/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/io/flags/__pycache__/access_patterns.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/io/__pycache__/fmt.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/ioflags.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/branch.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/collect.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/evaluate.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/exists.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/input.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/lookup.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/rule_items_proxy.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/subpath.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/jobs.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/linting/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/linting/__pycache__/links.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/linting/__pycache__/rules.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/linting/__pycache__/snakefiles.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/logging.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/modules.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/notebook.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/output_index.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/parser.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/path_modifier.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/persistence.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/profiles.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/AzBlob.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/EGA.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/FTP.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/GS.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/HTTP.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/NCBI.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/S3.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/S3Mocked.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/SFTP.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/XRootD.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/dropbox.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/gfal.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/gridftp.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/iRODS.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/webdav.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/remote/__pycache__/zenodo.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/__pycache__/common.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/__pycache__/common.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/categories.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/common.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/configfiles.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/packages.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/results.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/rulegraph.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/rules.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/runtimes.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/timeline.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/report/__pycache__/rulegraph_spec.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/resources.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/ruleinfo.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/rules.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/scheduler.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/script/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/settings/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/settings/__pycache__/enums.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/settings/__pycache__/types.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/shell.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/sourcecache.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/spawn_jobs.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/storage.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/target_jobs.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/template_rendering/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/template_rendering/__pycache__/jinja2.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/template_rendering/__pycache__/yte.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/unit_tests/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/unit_tests/templates/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/utils.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/workflow.cpython-312.pyc",
+    "lib/python3.12/site-packages/snakemake/__pycache__/wrapper.cpython-312.pyc",
+    "bin/snakemake"
+  ],
+  "fn": "snakemake-minimal-9.1.9-pyhdfd78af_0.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/home/federico/.conda/pkgs/snakemake-minimal-9.1.9-pyhdfd78af_0",
+    "type": 1
+  },
+  "md5": "00a6630c8564652913eadae7f12df72b",
+  "name": "snakemake-minimal",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/federico/.conda/pkgs/snakemake-minimal-9.1.9-pyhdfd78af_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/snakemake-0.0.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/snakemake-0.0.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "4696b34c969910262aeb64a73382ab2724479afc7a2c655db1ba1adac61e1fbf",
+        "sha256_in_prefix": "4696b34c969910262aeb64a73382ab2724479afc7a2c655db1ba1adac61e1fbf",
+        "size_in_bytes": 2699
+      },
+      {
+        "_path": "site-packages/snakemake-0.0.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "baddb2e406a39c64d8f0c6c26964e41f77b1c4fefeb41e32abbefc2ba573d97e",
+        "sha256_in_prefix": "baddb2e406a39c64d8f0c6c26964e41f77b1c4fefeb41e32abbefc2ba573d97e",
+        "size_in_bytes": 28400
+      },
+      {
+        "_path": "site-packages/snakemake-0.0.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/snakemake-0.0.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "0a6c85234931e5c7443132e238d4116c64308c8a11d5a21807b782010e0a3c9d",
+        "sha256_in_prefix": "0a6c85234931e5c7443132e238d4116c64308c8a11d5a21807b782010e0a3c9d",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "site-packages/snakemake-0.0.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "00c21418bc4f6d101a94b5aca1839e3a8e38c3860068326685e7b3e6beb89521",
+        "sha256_in_prefix": "00c21418bc4f6d101a94b5aca1839e3a8e38c3860068326685e7b3e6beb89521",
+        "size_in_bytes": 83
+      },
+      {
+        "_path": "site-packages/snakemake-0.0.0.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "0489dcab94c1eb144bf3a5e598c41924778a60320bbcbe8c567e770e6da82e0b",
+        "sha256_in_prefix": "0489dcab94c1eb144bf3a5e598c41924778a60320bbcbe8c567e770e6da82e0b",
+        "size_in_bytes": 49
+      },
+      {
+        "_path": "site-packages/snakemake-0.0.0.dist-info/licenses/LICENSE.md",
+        "path_type": "hardlink",
+        "sha256": "84a1a82b05c80637744d3fe8257235c15380efa6cc32608adf4b21f17af5d2b8",
+        "sha256_in_prefix": "84a1a82b05c80637744d3fe8257235c15380efa6cc32608adf4b21f17af5d2b8",
+        "size_in_bytes": 1067
+      },
+      {
+        "_path": "site-packages/snakemake-0.0.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "a2507f43663e32c1b3994011558ec09ea2db34b023b5a89d917cdb078d68539d",
+        "sha256_in_prefix": "a2507f43663e32c1b3994011558ec09ea2db34b023b5a89d917cdb078d68539d",
+        "size_in_bytes": 10
+      },
+      {
+        "_path": "site-packages/snakemake/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "7b9ba806b1092dea643cd7709169ef8cdef2ce5e7ba79664307aedff1195785f",
+        "sha256_in_prefix": "7b9ba806b1092dea643cd7709169ef8cdef2ce5e7ba79664307aedff1195785f",
+        "size_in_bytes": 487
+      },
+      {
+        "_path": "site-packages/snakemake/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "6eb6fcf7d23145d839c876385cc1652edf95e77cda88f016956a0865a9b76411",
+        "sha256_in_prefix": "6eb6fcf7d23145d839c876385cc1652edf95e77cda88f016956a0865a9b76411",
+        "size_in_bytes": 119
+      },
+      {
+        "_path": "site-packages/snakemake/_version.py",
+        "path_type": "hardlink",
+        "sha256": "a4d4ad16f8be138fb2f2066e2b1080508e7a8e38eb8021fe31381f5e5d5490d7",
+        "sha256_in_prefix": "a4d4ad16f8be138fb2f2066e2b1080508e7a8e38eb8021fe31381f5e5d5490d7",
+        "size_in_bytes": 511
+      },
+      {
+        "_path": "site-packages/snakemake/api.py",
+        "path_type": "hardlink",
+        "sha256": "a22b3bf56484ee7b5dab5fba9bc0d4747eb1ce641ae5441f34346d54c18720b8",
+        "sha256_in_prefix": "a22b3bf56484ee7b5dab5fba9bc0d4747eb1ce641ae5441f34346d54c18720b8",
+        "size_in_bytes": 28081
+      },
+      {
+        "_path": "site-packages/snakemake/assets/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "59a10cea466feb3ddf5dca29c7266629f5c36264a8f443b98a35d02d792e9b4d",
+        "sha256_in_prefix": "59a10cea466feb3ddf5dca29c7266629f5c36264a8f443b98a35d02d792e9b4d",
+        "size_in_bytes": 30984
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/@types-clone/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+        "sha256_in_prefix": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+        "size_in_bytes": 1141
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/@types-estree/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+        "sha256_in_prefix": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+        "size_in_bytes": 1141
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/array-flat-polyfill/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "597756adcb51f243ef4fb386920377f61d012ace0904364e1a8ee9aaec6afc84",
+        "sha256_in_prefix": "597756adcb51f243ef4fb386920377f61d012ace0904364e1a8ee9aaec6afc84",
+        "size_in_bytes": 6799
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/clone/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "3fb0857ef0133928cf72c88dfc464e931486e88778961eedec25585e2321507f",
+        "sha256_in_prefix": "3fb0857ef0133928cf72c88dfc464e931486e88778961eedec25585e2321507f",
+        "size_in_bytes": 1070
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/commons-math/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "64f23963615950bad9ddd31569a7f09afbbe11b81d94873ffd9b1cac6081a11d",
+        "sha256_in_prefix": "64f23963615950bad9ddd31569a7f09afbbe11b81d94873ffd9b1cac6081a11d",
+        "size_in_bytes": 24038
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/commons-math/NOTICE.txt",
+        "path_type": "hardlink",
+        "sha256": "5495442a32bfc2b93b4a8f2c34c5c218d16cca434aa5684fb953d9419120e3fa",
+        "sha256_in_prefix": "5495442a32bfc2b93b4a8f2c34c5c218d16cca434aa5684fb953d9419120e3fa",
+        "size_in_bytes": 324
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-array/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "0747bebeb06b10954913149be9b9a8bdf6fad3e6fdcbd9f9524e7a94c13d2cea",
+        "sha256_in_prefix": "0747bebeb06b10954913149be9b9a8bdf6fad3e6fdcbd9f9524e7a94c13d2cea",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-color/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "sha256_in_prefix": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-contour/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "5f5dcce265668080a60fbdc513f6f8ef21466780bcaa331e64ee39df19e63b30",
+        "sha256_in_prefix": "5f5dcce265668080a60fbdc513f6f8ef21466780bcaa331e64ee39df19e63b30",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-delaunay/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "d19bf35c4080eea32e098a9c8d62540ffd425611ac8dfc856a233f0357d8b02e",
+        "sha256_in_prefix": "d19bf35c4080eea32e098a9c8d62540ffd425611ac8dfc856a233f0357d8b02e",
+        "size_in_bytes": 730
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-dispatch/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "sha256_in_prefix": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-dsv/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "8b5304265ccedbd17567aa14a0dc6b9bf4013fee44964c46aa54fdf8527d6a68",
+        "sha256_in_prefix": "8b5304265ccedbd17567aa14a0dc6b9bf4013fee44964c46aa54fdf8527d6a68",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-force/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "sha256_in_prefix": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-format/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "7eea8533ea92bd8c32a901e89ecb0305890905bb12711449565ddff96891146d",
+        "sha256_in_prefix": "7eea8533ea92bd8c32a901e89ecb0305890905bb12711449565ddff96891146d",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-geo-projection/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "4108a126a74cc35d4d5ae39ca5d0cc926fa7c8ec40e459a0c6d3481c69decbd8",
+        "sha256_in_prefix": "4108a126a74cc35d4d5ae39ca5d0cc926fa7c8ec40e459a0c6d3481c69decbd8",
+        "size_in_bytes": 2627
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-geo/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "c3c9d41a75b64963748657932167ec4c56404b8fd557d4f89c9eeda6e2fdf39a",
+        "sha256_in_prefix": "c3c9d41a75b64963748657932167ec4c56404b8fd557d4f89c9eeda6e2fdf39a",
+        "size_in_bytes": 2606
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-hierarchy/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "sha256_in_prefix": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-interpolate/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "sha256_in_prefix": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-path/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "b8265327ab678f554800e71188b1cc6b1ff57522e292d2b1c0be66f27cf328b6",
+        "sha256_in_prefix": "b8265327ab678f554800e71188b1cc6b1ff57522e292d2b1c0be66f27cf328b6",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-quadtree/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "sha256_in_prefix": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-regression/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "d210203f922101502894baf700b9a392e323a26e4b603ab166c57e09a6e773b5",
+        "sha256_in_prefix": "d210203f922101502894baf700b9a392e323a26e4b603ab166c57e09a6e773b5",
+        "size_in_bytes": 1513
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-scale/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "7eea8533ea92bd8c32a901e89ecb0305890905bb12711449565ddff96891146d",
+        "sha256_in_prefix": "7eea8533ea92bd8c32a901e89ecb0305890905bb12711449565ddff96891146d",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-shape/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "7eea8533ea92bd8c32a901e89ecb0305890905bb12711449565ddff96891146d",
+        "sha256_in_prefix": "7eea8533ea92bd8c32a901e89ecb0305890905bb12711449565ddff96891146d",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-time-format/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "7a3cb0e5055874e67db9aa2d5fe26de23204fa994ffbad198901ffe9c812a717",
+        "sha256_in_prefix": "7a3cb0e5055874e67db9aa2d5fe26de23204fa994ffbad198901ffe9c812a717",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-time/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "sha256_in_prefix": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/d3-timer/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "sha256_in_prefix": "e1211892da0b0e0585b7aebe8f98c1274fba15bafe47fa1f4ee8a7a502c06304",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/delaunator/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "27043d1a6a0e1985fde12660decbbd3b23c67de900b00609c90d4f0aa492f425",
+        "sha256_in_prefix": "27043d1a6a0e1985fde12660decbbd3b23c67de900b00609c90d4f0aa492f425",
+        "size_in_bytes": 738
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/esprima/LICENSE.BSD",
+        "path_type": "hardlink",
+        "sha256": "0e74697a68cebdcd61502c30fe80ab7f9e341d995dcd452023654d57133534b1",
+        "sha256_in_prefix": "0e74697a68cebdcd61502c30fe80ab7f9e341d995dcd452023654d57133534b1",
+        "size_in_bytes": 1231
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/fabric/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "9f6c2cc99aa9c618df93fed7d1cf7279d4e329d92dd2ce5e96173c73ce305055",
+        "sha256_in_prefix": "9f6c2cc99aa9c618df93fed7d1cf7279d4e329d92dd2ce5e96173c73ce305055",
+        "size_in_bytes": 960
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/fast-deep-equal/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a",
+        "sha256_in_prefix": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a",
+        "size_in_bytes": 1074
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/fast-json-patch/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "26593d78926902a82eb9bc7e40d1811fc381055f23516b92fe48ca8399bf02df",
+        "sha256_in_prefix": "26593d78926902a82eb9bc7e40d1811fc381055f23516b92fe48ca8399bf02df",
+        "size_in_bytes": 1089
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/fast-json-stable-stringify/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "a833d366242c298cf1b10263516572fb8dcbe68eb5072cdcac2b4546e2b4eb36",
+        "sha256_in_prefix": "a833d366242c298cf1b10263516572fb8dcbe68eb5072cdcac2b4546e2b4eb36",
+        "size_in_bytes": 1145
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/hashlru/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "08e4bd7a280eaaf1fbcaad9dad1fb94412477fcdd1cf81660988303297e5e1d1",
+        "sha256_in_prefix": "08e4bd7a280eaaf1fbcaad9dad1fb94412477fcdd1cf81660988303297e5e1d1",
+        "size_in_bytes": 1073
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/heroicons/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "75523ddd65d9620bea09f84e89d0c373b4205a3708b8a1e9f9598a5438a3e641",
+        "sha256_in_prefix": "75523ddd65d9620bea09f84e89d0c373b4205a3708b8a1e9f9598a5438a3e641",
+        "size_in_bytes": 1076
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/json-stringify-pretty-compact/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "d0800a7c9b5f723f7fe029f75d3a9ae44173178b9729d1521e18371ab24ae97a",
+        "sha256_in_prefix": "d0800a7c9b5f723f7fe029f75d3a9ae44173178b9729d1521e18371ab24ae97a",
+        "size_in_bytes": 1103
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/prop-types/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "f657f99d3fb9647db92628e96007aabb46e5f04f33e49999075aab8e250ca7ce",
+        "sha256_in_prefix": "f657f99d3fb9647db92628e96007aabb46e5f04f33e49999075aab8e250ca7ce",
+        "size_in_bytes": 1080
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/prop-types/prop-types.min.js",
+        "path_type": "hardlink",
+        "sha256": "4c88350517ee82aa4f3368e67ef1a453ca6636dcfa6449b4e3d6faa5c877066e",
+        "sha256_in_prefix": "4c88350517ee82aa4f3368e67ef1a453ca6636dcfa6449b4e3d6faa5c877066e",
+        "size_in_bytes": 1763
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/pygments/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17",
+        "sha256_in_prefix": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17",
+        "size_in_bytes": 1331
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/quickselect/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "597034cb7c11c916ad407344ea99a0b08e3c443a6b4421460f1d23c411c69707",
+        "sha256_in_prefix": "597034cb7c11c916ad407344ea99a0b08e3c443a6b4421460f1d23c411c69707",
+        "size_in_bytes": 750
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/react/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+        "sha256_in_prefix": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+        "size_in_bytes": 1086
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/react/react-dom.production.min.js",
+        "path_type": "hardlink",
+        "sha256": "21758ed084cd0e37e735722ee4f3957ea960628a29dfa6c3ce1a1d47a2d6e4f7",
+        "sha256_in_prefix": "21758ed084cd0e37e735722ee4f3957ea960628a29dfa6c3ce1a1d47a2d6e4f7",
+        "size_in_bytes": 131882
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/react/react.production.min.js",
+        "path_type": "hardlink",
+        "sha256": "4b4969fa4ef3594324da2c6d78ce8766fbbc2fd121fff395aedf997db0a99a06",
+        "sha256_in_prefix": "4b4969fa4ef3594324da2c6d78ce8766fbbc2fd121fff395aedf997db0a99a06",
+        "size_in_bytes": 10737
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/regression/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "2f932f5cfb9b042cc6c0089ee8004b33e3746ffeab879341dbd453c150524307",
+        "sha256_in_prefix": "2f932f5cfb9b042cc6c0089ee8004b33e3746ffeab879341dbd453c150524307",
+        "size_in_bytes": 1099
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/science/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "3bd1fdf686ffcad175daddcb36ee28599ac8f090b6cec2c7654118c8a6f3d4c9",
+        "sha256_in_prefix": "3bd1fdf686ffcad175daddcb36ee28599ac8f090b6cec2c7654118c8a6f3d4c9",
+        "size_in_bytes": 1429
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/semver/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b",
+        "sha256_in_prefix": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b",
+        "size_in_bytes": 765
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/shapefile/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "c16529a9d5b8802982abd714a6823344e24b0cb5131596bc343927ead605d708",
+        "sha256_in_prefix": "c16529a9d5b8802982abd714a6823344e24b0cb5131596bc343927ead605d708",
+        "size_in_bytes": 1429
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/snakemake/LICENSE.md",
+        "path_type": "hardlink",
+        "sha256": "84a1a82b05c80637744d3fe8257235c15380efa6cc32608adf4b21f17af5d2b8",
+        "sha256_in_prefix": "84a1a82b05c80637744d3fe8257235c15380efa6cc32608adf4b21f17af5d2b8",
+        "size_in_bytes": 1067
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/tailwindcss/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985",
+        "sha256_in_prefix": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985",
+        "size_in_bytes": 1071
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/tailwindcss/tailwind.css",
+        "path_type": "hardlink",
+        "sha256": "dcb92a6d40d8bfa1eef529298514695fbcf7e454182743d3b993658abe1f9106",
+        "sha256_in_prefix": "dcb92a6d40d8bfa1eef529298514695fbcf7e454182743d3b993658abe1f9106",
+        "size_in_bytes": 452656
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/topojson-client/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "4c4d15b635e04e691825a76db7d33f7f2033b55669a7430011694f31e6c65999",
+        "sha256_in_prefix": "4c4d15b635e04e691825a76db7d33f7f2033b55669a7430011694f31e6c65999",
+        "size_in_bytes": 734
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/vega-embed/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "32df67148f0fc3db0eb9e263a7b75d07f1eb14c61955005a4a39c6918d10d137",
+        "sha256_in_prefix": "32df67148f0fc3db0eb9e263a7b75d07f1eb14c61955005a4a39c6918d10d137",
+        "size_in_bytes": 1528
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/vega-embed/vega-embed.js",
+        "path_type": "hardlink",
+        "sha256": "4e546c1f86eb200333606440e92f76e2940b905757018d9672cd1708e4e6ff0a",
+        "sha256_in_prefix": "4e546c1f86eb200333606440e92f76e2940b905757018d9672cd1708e4e6ff0a",
+        "size_in_bytes": 163782
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/vega-lite/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "f618900fd0d64046963b29f40590cdd1e341a2f41449f99110d82fd81fea808c",
+        "sha256_in_prefix": "f618900fd0d64046963b29f40590cdd1e341a2f41449f99110d82fd81fea808c",
+        "size_in_bytes": 1529
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/vega-lite/vega-lite.js",
+        "path_type": "hardlink",
+        "sha256": "6eb7f93121cd9f44cf8640244f87c5e143f87c7a0b6cd113da4a9e41e3adf0aa",
+        "sha256_in_prefix": "6eb7f93121cd9f44cf8640244f87c5e143f87c7a0b6cd113da4a9e41e3adf0aa",
+        "size_in_bytes": 735862
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/vega-schema-url-parser/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "eeb1606fda238f623c36d1eb5e27c33b986a446445340b220c141097424af045",
+        "sha256_in_prefix": "eeb1606fda238f623c36d1eb5e27c33b986a446445340b220c141097424af045",
+        "size_in_bytes": 1504
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/vega-themes/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "ceb75fa4fbebbc381c0465442a502ffc13b73f36ccb385a66bcd5f55869e3979",
+        "sha256_in_prefix": "ceb75fa4fbebbc381c0465442a502ffc13b73f36ccb385a66bcd5f55869e3979",
+        "size_in_bytes": 1528
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/vega-tooltip/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "93cd20d9cee8c77c080d1a585e3b07644ad2c8e9ccdfc86e350136884d62d935",
+        "sha256_in_prefix": "93cd20d9cee8c77c080d1a585e3b07644ad2c8e9ccdfc86e350136884d62d935",
+        "size_in_bytes": 1482
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/vega/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "b75f7ed0af20dedadf92c52bc236161bcf0d294ff2e6e34ca76403203349f71d",
+        "sha256_in_prefix": "b75f7ed0af20dedadf92c52bc236161bcf0d294ff2e6e34ca76403203349f71d",
+        "size_in_bytes": 1533
+      },
+      {
+        "_path": "site-packages/snakemake/assets/data/vega/vega.js",
+        "path_type": "hardlink",
+        "sha256": "b34c43055ef5d39a093e937522955dc359fbaec6c5b0259ae2de4c9da698e9fe",
+        "sha256_in_prefix": "b34c43055ef5d39a093e937522955dc359fbaec6c5b0259ae2de4c9da698e9fe",
+        "size_in_bytes": 1274116
+      },
+      {
+        "_path": "site-packages/snakemake/benchmark.py",
+        "path_type": "hardlink",
+        "sha256": "98bfe8169ba911ab21c3de1a48b92c672ca3ed0233459e423290c3c9ea52e8e8",
+        "sha256_in_prefix": "98bfe8169ba911ab21c3de1a48b92c672ca3ed0233459e423290c3c9ea52e8e8",
+        "size_in_bytes": 15100
+      },
+      {
+        "_path": "site-packages/snakemake/caching/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "ee346bfbff2b25bf38abe80fe1654c93b8a3b957fcab0270c52d88c6e99b56c4",
+        "sha256_in_prefix": "ee346bfbff2b25bf38abe80fe1654c93b8a3b957fcab0270c52d88c6e99b56c4",
+        "size_in_bytes": 2700
+      },
+      {
+        "_path": "site-packages/snakemake/caching/hash.py",
+        "path_type": "hardlink",
+        "sha256": "3fe845a888392a063853ea0b3c828dcd1f337add5d40323ab107434619ad7713",
+        "sha256_in_prefix": "3fe845a888392a063853ea0b3c828dcd1f337add5d40323ab107434619ad7713",
+        "size_in_bytes": 6015
+      },
+      {
+        "_path": "site-packages/snakemake/caching/local.py",
+        "path_type": "hardlink",
+        "sha256": "67c9d51567fa4794ab4854c300d3fa7ac5fab9e362027d5e7d13d2fa745c3515",
+        "sha256_in_prefix": "67c9d51567fa4794ab4854c300d3fa7ac5fab9e362027d5e7d13d2fa745c3515",
+        "size_in_bytes": 6573
+      },
+      {
+        "_path": "site-packages/snakemake/caching/storage.py",
+        "path_type": "hardlink",
+        "sha256": "9f71db3058ed66d03e216fd0f38db02bbd9386e73a073e8c67534978652cfd5a",
+        "sha256_in_prefix": "9f71db3058ed66d03e216fd0f38db02bbd9386e73a073e8c67534978652cfd5a",
+        "size_in_bytes": 2624
+      },
+      {
+        "_path": "site-packages/snakemake/checkpoints.py",
+        "path_type": "hardlink",
+        "sha256": "63bd405feabcb766394a6c3d233ec773003433986ae72d8dcf3988a2895d7a67",
+        "sha256_in_prefix": "63bd405feabcb766394a6c3d233ec773003433986ae72d8dcf3988a2895d7a67",
+        "size_in_bytes": 2611
+      },
+      {
+        "_path": "site-packages/snakemake/cli.py",
+        "path_type": "hardlink",
+        "sha256": "cab555fc0108ba7b7a3a3be9931831395fb0ffbb3d6bb46d4e45baa5ebd5c0e6",
+        "sha256_in_prefix": "cab555fc0108ba7b7a3a3be9931831395fb0ffbb3d6bb46d4e45baa5ebd5c0e6",
+        "size_in_bytes": 91519
+      },
+      {
+        "_path": "site-packages/snakemake/common/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "10c8a763c2b625d5744324b5bc16678ffe224f13731806c63cf7f8be9ec9f54d",
+        "sha256_in_prefix": "10c8a763c2b625d5744324b5bc16678ffe224f13731806c63cf7f8be9ec9f54d",
+        "size_in_bytes": 10360
+      },
+      {
+        "_path": "site-packages/snakemake/common/argparse.py",
+        "path_type": "hardlink",
+        "sha256": "ae400c9ef8102e26562aa3ffa06d7e712403b9b4734dd11781ea3136c2e134a2",
+        "sha256_in_prefix": "ae400c9ef8102e26562aa3ffa06d7e712403b9b4734dd11781ea3136c2e134a2",
+        "size_in_bytes": 2662
+      },
+      {
+        "_path": "site-packages/snakemake/common/configfile.py",
+        "path_type": "hardlink",
+        "sha256": "627554d16b1bbe23cb3fc494d2a6b8cd2d8d866156a554f7809a6bcecf65ce7d",
+        "sha256_in_prefix": "627554d16b1bbe23cb3fc494d2a6b8cd2d8d866156a554f7809a6bcecf65ce7d",
+        "size_in_bytes": 1474
+      },
+      {
+        "_path": "site-packages/snakemake/common/git.py",
+        "path_type": "hardlink",
+        "sha256": "2e09289620f5702109e8b3c6d3a630b84f954ec6754cc4765fd5d1b2cb6a13d8",
+        "sha256_in_prefix": "2e09289620f5702109e8b3c6d3a630b84f954ec6754cc4765fd5d1b2cb6a13d8",
+        "size_in_bytes": 2906
+      },
+      {
+        "_path": "site-packages/snakemake/common/prefix_lookup.py",
+        "path_type": "hardlink",
+        "sha256": "0ca682cca4ee92788b29de018af1e46fb65e9b302b5477f71499ea8159243bed",
+        "sha256_in_prefix": "0ca682cca4ee92788b29de018af1e46fb65e9b302b5477f71499ea8159243bed",
+        "size_in_bytes": 1920
+      },
+      {
+        "_path": "site-packages/snakemake/common/tbdstring.py",
+        "path_type": "hardlink",
+        "sha256": "b871af8a936c80cd6a41e405a176eefd47481f426480be405dbf821140aa9c91",
+        "sha256_in_prefix": "b871af8a936c80cd6a41e405a176eefd47481f426480be405dbf821140aa9c91",
+        "size_in_bytes": 1809
+      },
+      {
+        "_path": "site-packages/snakemake/common/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dbc02225640ae546642484144ca4feac3481c51874853caab81a9d9e2d325523",
+        "sha256_in_prefix": "dbc02225640ae546642484144ca4feac3481c51874853caab81a9d9e2d325523",
+        "size_in_bytes": 7501
+      },
+      {
+        "_path": "site-packages/snakemake/common/tests/testcases/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/snakemake/common/tests/testcases/groups/Snakefile",
+        "path_type": "hardlink",
+        "sha256": "d6f49137275c06d427ef97afc3820ffcb098280b9f31c16d0e748a75f861127f",
+        "sha256_in_prefix": "d6f49137275c06d427ef97afc3820ffcb098280b9f31c16d0e748a75f861127f",
+        "size_in_bytes": 677
+      },
+      {
+        "_path": "site-packages/snakemake/common/tests/testcases/groups/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/snakemake/common/tests/testcases/groups/caption.rst",
+        "path_type": "hardlink",
+        "sha256": "08c981c6cfb74653148183fbfba36e06ebdfb34c899e37f1fbeef7df463d4266",
+        "sha256_in_prefix": "08c981c6cfb74653148183fbfba36e06ebdfb34c899e37f1fbeef7df463d4266",
+        "size_in_bytes": 49
+      },
+      {
+        "_path": "site-packages/snakemake/common/tests/testcases/simple/Snakefile",
+        "path_type": "hardlink",
+        "sha256": "140317465a0a9c36d1010bc09dd7e237670ca677c176b144c8c7bb0308f767e9",
+        "sha256_in_prefix": "140317465a0a9c36d1010bc09dd7e237670ca677c176b144c8c7bb0308f767e9",
+        "size_in_bytes": 860
+      },
+      {
+        "_path": "site-packages/snakemake/common/tests/testcases/simple/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/snakemake/common/tests/testcases/simple/caption.rst",
+        "path_type": "hardlink",
+        "sha256": "08c981c6cfb74653148183fbfba36e06ebdfb34c899e37f1fbeef7df463d4266",
+        "sha256_in_prefix": "08c981c6cfb74653148183fbfba36e06ebdfb34c899e37f1fbeef7df463d4266",
+        "size_in_bytes": 49
+      },
+      {
+        "_path": "site-packages/snakemake/common/typing.py",
+        "path_type": "hardlink",
+        "sha256": "73979feeb4376655f986218cb2d35517b22ab8552adc40210e974fd247195522",
+        "sha256_in_prefix": "73979feeb4376655f986218cb2d35517b22ab8552adc40210e974fd247195522",
+        "size_in_bytes": 106
+      },
+      {
+        "_path": "site-packages/snakemake/common/workdir_handler.py",
+        "path_type": "hardlink",
+        "sha256": "05f81f0c23455cb2ae95b836245fe9fc73435202348c635a1e88fde4d44f945e",
+        "sha256_in_prefix": "05f81f0c23455cb2ae95b836245fe9fc73435202348c635a1e88fde4d44f945e",
+        "size_in_bytes": 683
+      },
+      {
+        "_path": "site-packages/snakemake/cwl.py",
+        "path_type": "hardlink",
+        "sha256": "b08d8847bbf5f015563c68034106230be3e3bf50bd8a1cacdd36abb13d01fa58",
+        "sha256_in_prefix": "b08d8847bbf5f015563c68034106230be3e3bf50bd8a1cacdd36abb13d01fa58",
+        "size_in_bytes": 8447
+      },
+      {
+        "_path": "site-packages/snakemake/dag.py",
+        "path_type": "hardlink",
+        "sha256": "283dc7c32977a2d47d35d06ae351678358e5c8a9f5c28750b39d52f0c7728492",
+        "sha256_in_prefix": "283dc7c32977a2d47d35d06ae351678358e5c8a9f5c28750b39d52f0c7728492",
+        "size_in_bytes": 125596
+      },
+      {
+        "_path": "site-packages/snakemake/decorators.py",
+        "path_type": "hardlink",
+        "sha256": "c0dd23927107cd09ca18010bf2e56b3ef69678e6efc86582a373a917ee149982",
+        "sha256_in_prefix": "c0dd23927107cd09ca18010bf2e56b3ef69678e6efc86582a373a917ee149982",
+        "size_in_bytes": 469
+      },
+      {
+        "_path": "site-packages/snakemake/deployment/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/snakemake/deployment/conda.py",
+        "path_type": "hardlink",
+        "sha256": "dd2711906cb9b7331953fdb7b0aa47bca41c305c82378843e57060d8617ce4d2",
+        "sha256_in_prefix": "dd2711906cb9b7331953fdb7b0aa47bca41c305c82378843e57060d8617ce4d2",
+        "size_in_bytes": 36553
+      },
+      {
+        "_path": "site-packages/snakemake/deployment/containerize.py",
+        "path_type": "hardlink",
+        "sha256": "1256858c5145e90c5947b4db471afa4ccb2f83a0f1938964a373ea3212cf51ad",
+        "sha256_in_prefix": "1256858c5145e90c5947b4db471afa4ccb2f83a0f1938964a373ea3212cf51ad",
+        "size_in_bytes": 2740
+      },
+      {
+        "_path": "site-packages/snakemake/deployment/env_modules.py",
+        "path_type": "hardlink",
+        "sha256": "bdba54fd129816148aa00719044beabc747de42efff6f443ad17c99df8e729e7",
+        "sha256_in_prefix": "bdba54fd129816148aa00719044beabc747de42efff6f443ad17c99df8e729e7",
+        "size_in_bytes": 721
+      },
+      {
+        "_path": "site-packages/snakemake/deployment/singularity.py",
+        "path_type": "hardlink",
+        "sha256": "24320dd07bef6ed4742737930de9f81002528cc59812f385ce8bb178af9e8065",
+        "sha256_in_prefix": "24320dd07bef6ed4742737930de9f81002528cc59812f385ce8bb178af9e8065",
+        "size_in_bytes": 6918
+      },
+      {
+        "_path": "site-packages/snakemake/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "c7bc71e6e020e4d65846c1181866ef859f5b7c1e44302ddc5358f4df0fc1d6c8",
+        "sha256_in_prefix": "c7bc71e6e020e4d65846c1181866ef859f5b7c1e44302ddc5358f4df0fc1d6c8",
+        "size_in_bytes": 20302
+      },
+      {
+        "_path": "site-packages/snakemake/executors/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "10f53792bc5fe4c4d278d950489ac50447f6ad08e27113d4023574385baf51c1",
+        "sha256_in_prefix": "10f53792bc5fe4c4d278d950489ac50447f6ad08e27113d4023574385baf51c1",
+        "size_in_bytes": 628
+      },
+      {
+        "_path": "site-packages/snakemake/executors/dryrun.py",
+        "path_type": "hardlink",
+        "sha256": "71a2193d64bfda5b2e248f59d34919f9ea4dc03ec88075f2d34f8cd4b2aeb20c",
+        "sha256_in_prefix": "71a2193d64bfda5b2e248f59d34919f9ea4dc03ec88075f2d34f8cd4b2aeb20c",
+        "size_in_bytes": 2362
+      },
+      {
+        "_path": "site-packages/snakemake/executors/google_lifesciences_helper.py",
+        "path_type": "hardlink",
+        "sha256": "efd0425032af03ceb57043e9b220eddb573806a3bf8d48c0475947c021428bba",
+        "sha256_in_prefix": "efd0425032af03ceb57043e9b220eddb573806a3bf8d48c0475947c021428bba",
+        "size_in_bytes": 3944
+      },
+      {
+        "_path": "site-packages/snakemake/executors/jobscript.sh",
+        "path_type": "hardlink",
+        "sha256": "ed79806bcddf7ad8d28613d390a0da25f9cdd4b9d694b32b98cd5b13a2ae4ef3",
+        "sha256_in_prefix": "ed79806bcddf7ad8d28613d390a0da25f9cdd4b9d694b32b98cd5b13a2ae4ef3",
+        "size_in_bytes": 49
+      },
+      {
+        "_path": "site-packages/snakemake/executors/local.py",
+        "path_type": "hardlink",
+        "sha256": "b19a36fd9f68cc96eedffd8b9c0148dfef537c2d5d5a75a5e75102af6f02a550",
+        "sha256_in_prefix": "b19a36fd9f68cc96eedffd8b9c0148dfef537c2d5d5a75a5e75102af6f02a550",
+        "size_in_bytes": 17285
+      },
+      {
+        "_path": "site-packages/snakemake/executors/touch.py",
+        "path_type": "hardlink",
+        "sha256": "3d82dc896413bc13c5819c8172fa17c19bcc7e0ce9646f1929b66e1be2e35274",
+        "sha256_in_prefix": "3d82dc896413bc13c5819c8172fa17c19bcc7e0ce9646f1929b66e1be2e35274",
+        "size_in_bytes": 3228
+      },
+      {
+        "_path": "site-packages/snakemake/gui.html",
+        "path_type": "hardlink",
+        "sha256": "e05ffd18ced5b895e056a64c1f664a8109efbd11e04e5ea41e4322361a36194a",
+        "sha256_in_prefix": "e05ffd18ced5b895e056a64c1f664a8109efbd11e04e5ea41e4322361a36194a",
+        "size_in_bytes": 13781
+      },
+      {
+        "_path": "site-packages/snakemake/gui.py",
+        "path_type": "hardlink",
+        "sha256": "254119e624274584a9a34755d5f787b996d89d05e49b729fa978093112cef4ba",
+        "sha256_in_prefix": "254119e624274584a9a34755d5f787b996d89d05e49b729fa978093112cef4ba",
+        "size_in_bytes": 4500
+      },
+      {
+        "_path": "site-packages/snakemake/io/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "36bb0dc74dfcc1fbc96b754e219ef08de20efafb1e61a5d72ff546256cc5b2e0",
+        "sha256_in_prefix": "36bb0dc74dfcc1fbc96b754e219ef08de20efafb1e61a5d72ff546256cc5b2e0",
+        "size_in_bytes": 65625
+      },
+      {
+        "_path": "site-packages/snakemake/io/flags/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "3a244c108e3ddc3eeb0c9a33b27ab8b2b8e66360a103ce632b3a4ff7a8de1bed",
+        "sha256_in_prefix": "3a244c108e3ddc3eeb0c9a33b27ab8b2b8e66360a103ce632b3a4ff7a8de1bed",
+        "size_in_bytes": 1577
+      },
+      {
+        "_path": "site-packages/snakemake/io/flags/access_patterns.py",
+        "path_type": "hardlink",
+        "sha256": "872740cbe7e64cad4b4b7c7dd02bdc6c0e36b6b423ea3ca65ef110afb19e5b22",
+        "sha256_in_prefix": "872740cbe7e64cad4b4b7c7dd02bdc6c0e36b6b423ea3ca65ef110afb19e5b22",
+        "size_in_bytes": 711
+      },
+      {
+        "_path": "site-packages/snakemake/io/fmt.py",
+        "path_type": "hardlink",
+        "sha256": "e0b45c596076b5bc16b7f7a10d58d63d5dfd958e5c3f7768e2e74d7bdc0d1d7a",
+        "sha256_in_prefix": "e0b45c596076b5bc16b7f7a10d58d63d5dfd958e5c3f7768e2e74d7bdc0d1d7a",
+        "size_in_bytes": 1707
+      },
+      {
+        "_path": "site-packages/snakemake/ioflags.py",
+        "path_type": "hardlink",
+        "sha256": "dcc82e3b853bc817204cead484e87f246b50d67e81ce99c30f8d7d80663c5def",
+        "sha256_in_prefix": "dcc82e3b853bc817204cead484e87f246b50d67e81ce99c30f8d7d80663c5def",
+        "size_in_bytes": 629
+      },
+      {
+        "_path": "site-packages/snakemake/ioutils/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "d8b59b191e28eaf9ee1e631bd1f4519aaf04ec0ac45e07dedd7c7737cbd1fa10",
+        "sha256_in_prefix": "d8b59b191e28eaf9ee1e631bd1f4519aaf04ec0ac45e07dedd7c7737cbd1fa10",
+        "size_in_bytes": 1067
+      },
+      {
+        "_path": "site-packages/snakemake/ioutils/branch.py",
+        "path_type": "hardlink",
+        "sha256": "1176e6241cbcd7b1f9fc165e2d69dd7be53da87e33f20e9eff0d8d1851b5d3a9",
+        "sha256_in_prefix": "1176e6241cbcd7b1f9fc165e2d69dd7be53da87e33f20e9eff0d8d1851b5d3a9",
+        "size_in_bytes": 2394
+      },
+      {
+        "_path": "site-packages/snakemake/ioutils/collect.py",
+        "path_type": "hardlink",
+        "sha256": "75c8c3b3cdf50f12662804a9494856b2c8df305bc1d2df2feb568e1c0825d95c",
+        "sha256_in_prefix": "75c8c3b3cdf50f12662804a9494856b2c8df305bc1d2df2feb568e1c0825d95c",
+        "size_in_bytes": 166
+      },
+      {
+        "_path": "site-packages/snakemake/ioutils/evaluate.py",
+        "path_type": "hardlink",
+        "sha256": "f4a9760c2ec37caec9996d37689dce10ab69e098a90b52c4bda8663468f1dc6f",
+        "sha256_in_prefix": "f4a9760c2ec37caec9996d37689dce10ab69e098a90b52c4bda8663468f1dc6f",
+        "size_in_bytes": 710
+      },
+      {
+        "_path": "site-packages/snakemake/ioutils/exists.py",
+        "path_type": "hardlink",
+        "sha256": "81dd4b6ce747128920ba7d097796c7fd3c5cd0dad318d64e314fc2a7066aec89",
+        "sha256_in_prefix": "81dd4b6ce747128920ba7d097796c7fd3c5cd0dad318d64e314fc2a7066aec89",
+        "size_in_bytes": 971
+      },
+      {
+        "_path": "site-packages/snakemake/ioutils/input.py",
+        "path_type": "hardlink",
+        "sha256": "9fbf31fbcd27bcb46a3dbc5ade9905ab6f63334118042eaf1d5c430942a9b932",
+        "sha256_in_prefix": "9fbf31fbcd27bcb46a3dbc5ade9905ab6f63334118042eaf1d5c430942a9b932",
+        "size_in_bytes": 1310
+      },
+      {
+        "_path": "site-packages/snakemake/ioutils/lookup.py",
+        "path_type": "hardlink",
+        "sha256": "5793d0bc9dde150964d1e4ddd847cc56be07f7d5e0aa2f3bc4dfdd541370be61",
+        "sha256_in_prefix": "5793d0bc9dde150964d1e4ddd847cc56be07f7d5e0aa2f3bc4dfdd541370be61",
+        "size_in_bytes": 9229
+      },
+      {
+        "_path": "site-packages/snakemake/ioutils/rule_items_proxy.py",
+        "path_type": "hardlink",
+        "sha256": "0913fd93a43d6a46e7967e1be4c7d641ec91c1a1f0185968a648160110213d92",
+        "sha256_in_prefix": "0913fd93a43d6a46e7967e1be4c7d641ec91c1a1f0185968a648160110213d92",
+        "size_in_bytes": 1765
+      },
+      {
+        "_path": "site-packages/snakemake/ioutils/subpath.py",
+        "path_type": "hardlink",
+        "sha256": "b5e1da387759e2419a560da9ae1329c85364f36dc7ab4f328ebbd976d2ac6d08",
+        "sha256_in_prefix": "b5e1da387759e2419a560da9ae1329c85364f36dc7ab4f328ebbd976d2ac6d08",
+        "size_in_bytes": 2744
+      },
+      {
+        "_path": "site-packages/snakemake/jobs.py",
+        "path_type": "hardlink",
+        "sha256": "804c3bdc8f68e40814ecd066cb58d76130820adbc52a60b47b51f7e8885a4de8",
+        "sha256_in_prefix": "804c3bdc8f68e40814ecd066cb58d76130820adbc52a60b47b51f7e8885a4de8",
+        "size_in_bytes": 64710
+      },
+      {
+        "_path": "site-packages/snakemake/linting/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "221bf7a8b48f3afc3f0ef79a744440a53b08f6b54ffca1d1a24332d22aeee83f",
+        "sha256_in_prefix": "221bf7a8b48f3afc3f0ef79a744440a53b08f6b54ffca1d1a24332d22aeee83f",
+        "size_in_bytes": 2455
+      },
+      {
+        "_path": "site-packages/snakemake/linting/links.py",
+        "path_type": "hardlink",
+        "sha256": "bccc585979845ac1980be97ad6289bc0cfea3e27a8259f8dfb19c30c3d5c3138",
+        "sha256_in_prefix": "bccc585979845ac1980be97ad6289bc0cfea3e27a8259f8dfb19c30c3d5c3138",
+        "size_in_bytes": 1262
+      },
+      {
+        "_path": "site-packages/snakemake/linting/rules.py",
+        "path_type": "hardlink",
+        "sha256": "e7b121aa440a7fa1495ed82838dd997378d8a9a9f10af48d5b8519e531e11ef5",
+        "sha256_in_prefix": "e7b121aa440a7fa1495ed82838dd997378d8a9a9f10af48d5b8519e531e11ef5",
+        "size_in_bytes": 6213
+      },
+      {
+        "_path": "site-packages/snakemake/linting/snakefiles.py",
+        "path_type": "hardlink",
+        "sha256": "a1cb6e4f12c0b09dbf6afbdce35cb0a811a781e4404bcc3eac947220f658f5b2",
+        "sha256_in_prefix": "a1cb6e4f12c0b09dbf6afbdce35cb0a811a781e4404bcc3eac947220f658f5b2",
+        "size_in_bytes": 4607
+      },
+      {
+        "_path": "site-packages/snakemake/logging.py",
+        "path_type": "hardlink",
+        "sha256": "32b37bedc8708ad6c2cce686f24c1dfe5346e960ab13bbf119560c7f6e52cb81",
+        "sha256_in_prefix": "32b37bedc8708ad6c2cce686f24c1dfe5346e960ab13bbf119560c7f6e52cb81",
+        "size_in_bytes": 22715
+      },
+      {
+        "_path": "site-packages/snakemake/modules.py",
+        "path_type": "hardlink",
+        "sha256": "3789d05588aebfbdde408867ec071881565f415254e718a73eb0b93b38335614",
+        "sha256_in_prefix": "3789d05588aebfbdde408867ec071881565f415254e718a73eb0b93b38335614",
+        "size_in_bytes": 9811
+      },
+      {
+        "_path": "site-packages/snakemake/notebook.py",
+        "path_type": "hardlink",
+        "sha256": "e4ba89f9e42100993611b842915e5352b461afe4f0bb3809d25f02fec87e8da1",
+        "sha256_in_prefix": "e4ba89f9e42100993611b842915e5352b461afe4f0bb3809d25f02fec87e8da1",
+        "size_in_bytes": 10526
+      },
+      {
+        "_path": "site-packages/snakemake/output_index.py",
+        "path_type": "hardlink",
+        "sha256": "e7ed42c6b4efb530727109274e21aeb1052d493d99327fc437d0a58e55f26503",
+        "sha256_in_prefix": "e7ed42c6b4efb530727109274e21aeb1052d493d99327fc437d0a58e55f26503",
+        "size_in_bytes": 1528
+      },
+      {
+        "_path": "site-packages/snakemake/parser.py",
+        "path_type": "hardlink",
+        "sha256": "14d1c2584ed075cf415f4bf9193b76db2914bb0507d4a7dc37399f603426feca",
+        "sha256_in_prefix": "14d1c2584ed075cf415f4bf9193b76db2914bb0507d4a7dc37399f603426feca",
+        "size_in_bytes": 39373
+      },
+      {
+        "_path": "site-packages/snakemake/path_modifier.py",
+        "path_type": "hardlink",
+        "sha256": "6362e212fcc24b447d34d4ce3fdcac80d984bfcef198465107e68b5acea88510",
+        "sha256_in_prefix": "6362e212fcc24b447d34d4ce3fdcac80d984bfcef198465107e68b5acea88510",
+        "size_in_bytes": 5394
+      },
+      {
+        "_path": "site-packages/snakemake/persistence.py",
+        "path_type": "hardlink",
+        "sha256": "376c4966be48889d5744ed7e8d63819db918dc544690d335869402bfe1ca21a9",
+        "sha256_in_prefix": "376c4966be48889d5744ed7e8d63819db918dc544690d335869402bfe1ca21a9",
+        "size_in_bytes": 28539
+      },
+      {
+        "_path": "site-packages/snakemake/profiles.py",
+        "path_type": "hardlink",
+        "sha256": "9ef65ea1db39806cafc2fa598b9b0b2875afb94f39a51a41847483f8a029038d",
+        "sha256_in_prefix": "9ef65ea1db39806cafc2fa598b9b0b2875afb94f39a51a41847483f8a029038d",
+        "size_in_bytes": 2760
+      },
+      {
+        "_path": "site-packages/snakemake/remote/AzBlob.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/remote/EGA.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/remote/FTP.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/remote/GS.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/remote/HTTP.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/remote/NCBI.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/remote/S3.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/remote/S3Mocked.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/remote/SFTP.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/remote/XRootD.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/remote/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "77b2c34790ed76e19e1b01860f29fae99b47b9ed11746d53cb37c6bb7fc75f3f",
+        "sha256_in_prefix": "77b2c34790ed76e19e1b01860f29fae99b47b9ed11746d53cb37c6bb7fc75f3f",
+        "size_in_bytes": 475
+      },
+      {
+        "_path": "site-packages/snakemake/remote/dropbox.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/remote/gfal.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/remote/gridftp.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/remote/iRODS.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/remote/webdav.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/remote/zenodo.py",
+        "path_type": "hardlink",
+        "sha256": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "sha256_in_prefix": "cbf5d143e233572bb4deea67d43e081876f98b98131d46066f55f830a770ef6c",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/snakemake/report.css",
+        "path_type": "hardlink",
+        "sha256": "046ba4606c51847dc033c4ef0f0e954230fc3b568b376e702016aed865390fc3",
+        "sha256_in_prefix": "046ba4606c51847dc033c4ef0f0e954230fc3b568b376e702016aed865390fc3",
+        "size_in_bytes": 2403
+      },
+      {
+        "_path": "site-packages/snakemake/report/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8003da0bc67e220ebd15b12e5ff34c2b3b6a82c7e49de8286bc7d21df3ef1b41",
+        "sha256_in_prefix": "8003da0bc67e220ebd15b12e5ff34c2b3b6a82c7e49de8286bc7d21df3ef1b41",
+        "size_in_bytes": 25131
+      },
+      {
+        "_path": "site-packages/snakemake/report/common.py",
+        "path_type": "hardlink",
+        "sha256": "4cd04e1f4e37973abad9129137924ee29d3c1e48592cb828f855fbbc3248f72b",
+        "sha256_in_prefix": "4cd04e1f4e37973abad9129137924ee29d3c1e48592cb828f855fbbc3248f72b",
+        "size_in_bytes": 1140
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "1b6055a69166bbac1b88e071ef199cc1b0d8826d4b2d43e5a2561797679998e9",
+        "sha256_in_prefix": "1b6055a69166bbac1b88e071ef199cc1b0d8826d4b2d43e5a2561797679998e9",
+        "size_in_bytes": 6735
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/common.py",
+        "path_type": "hardlink",
+        "sha256": "fb84e853be8779a92e8fe7b38dfb9ce1b7ab542333c874750f4cf5035d62b465",
+        "sha256_in_prefix": "fb84e853be8779a92e8fe7b38dfb9ce1b7ab542333c874750f4cf5035d62b465",
+        "size_in_bytes": 810
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/data/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b08d6db1b07aa02de886ac63688d90cdb5942ed706c23c1d4f4b0511ab4bfea8",
+        "sha256_in_prefix": "b08d6db1b07aa02de886ac63688d90cdb5942ed706c23c1d4f4b0511ab4bfea8",
+        "size_in_bytes": 261
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/data/categories.py",
+        "path_type": "hardlink",
+        "sha256": "5bf7ae34f5b73dc143bff93dd29854f1575c52e178184fc5ddc3f81dcd120699",
+        "sha256_in_prefix": "5bf7ae34f5b73dc143bff93dd29854f1575c52e178184fc5ddc3f81dcd120699",
+        "size_in_bytes": 419
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/data/common.py",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/data/configfiles.py",
+        "path_type": "hardlink",
+        "sha256": "1394534d8fd552501e8dbdd8430c71231a40296540a7bfc4cdbae5b3c01f9707",
+        "sha256_in_prefix": "1394534d8fd552501e8dbdd8430c71231a40296540a7bfc4cdbae5b3c01f9707",
+        "size_in_bytes": 1190
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/data/packages.py",
+        "path_type": "hardlink",
+        "sha256": "ef9e14ae7cf632a17a0884ecaf2fcbc6943c82290625a3b7a3c8bdf025f8b84d",
+        "sha256_in_prefix": "ef9e14ae7cf632a17a0884ecaf2fcbc6943c82290625a3b7a3c8bdf025f8b84d",
+        "size_in_bytes": 8341
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/data/results.py",
+        "path_type": "hardlink",
+        "sha256": "3c7c7c25142d5670301e11f3ffb77795e69271ce0167616a0ec5a7a566c2e2d8",
+        "sha256_in_prefix": "3c7c7c25142d5670301e11f3ffb77795e69271ce0167616a0ec5a7a566c2e2d8",
+        "size_in_bytes": 897
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/data/rulegraph.py",
+        "path_type": "hardlink",
+        "sha256": "c78e623161127dcd0aa7eb4b7e2f2e5fff1a7f0885093bde49ba844faf6cbc30",
+        "sha256_in_prefix": "c78e623161127dcd0aa7eb4b7e2f2e5fff1a7f0885093bde49ba844faf6cbc30",
+        "size_in_bytes": 5108
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/data/rules.py",
+        "path_type": "hardlink",
+        "sha256": "e9df962f688f9b56a5171d89cf21b43af28c1879bf3211635cd8412f614651d1",
+        "sha256_in_prefix": "e9df962f688f9b56a5171d89cf21b43af28c1879bf3211635cd8412f614651d1",
+        "size_in_bytes": 1213
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/data/runtimes.py",
+        "path_type": "hardlink",
+        "sha256": "16306adbc21d846da084523ebebe9d467ee2824e396bfd0ac2a65da78ec46b13",
+        "sha256_in_prefix": "16306adbc21d846da084523ebebe9d467ee2824e396bfd0ac2a65da78ec46b13",
+        "size_in_bytes": 679
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/data/timeline.py",
+        "path_type": "hardlink",
+        "sha256": "93b95408bde8dd8c25bfae3b5a19ebaa11f339a90ea5e5a2537009963d610ec0",
+        "sha256_in_prefix": "93b95408bde8dd8c25bfae3b5a19ebaa11f339a90ea5e5a2537009963d610ec0",
+        "size_in_bytes": 687
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/abstract_menu.js",
+        "path_type": "hardlink",
+        "sha256": "611c4ac0a95fcfdecf6b7155af47a9df59a2a060d0df03dafcd72ed0fadbefab",
+        "sha256_in_prefix": "611c4ac0a95fcfdecf6b7155af47a9df59a2a060d0df03dafcd72ed0fadbefab",
+        "size_in_bytes": 676
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/abstract_results.js",
+        "path_type": "hardlink",
+        "sha256": "ddc3621b61ab1ce8702256455ec2df2b9d1987e7ace9f1d5d143e8a87f5a910c",
+        "sha256_in_prefix": "ddc3621b61ab1ce8702256455ec2df2b9d1987e7ace9f1d5d143e8a87f5a910c",
+        "size_in_bytes": 9949
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/abstract_view_manager.js",
+        "path_type": "hardlink",
+        "sha256": "b7f7745b4a194e52f07cb1dee45963d048d68be8a5873e715c192a701510fbb8",
+        "sha256_in_prefix": "b7f7745b4a194e52f07cb1dee45963d048d68be8a5873e715c192a701510fbb8",
+        "size_in_bytes": 974
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/app.js",
+        "path_type": "hardlink",
+        "sha256": "9e43b0a6b050c9de231717777b238d968d000eb237f11fe54cfa2401664955f7",
+        "sha256_in_prefix": "9e43b0a6b050c9de231717777b238d968d000eb237f11fe54cfa2401664955f7",
+        "size_in_bytes": 2519
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/breadcrumbs.js",
+        "path_type": "hardlink",
+        "sha256": "e2488d0a9e6df19953de0cbf864802ffb654566fd7f36451f69d6ec9bdf1eaaa",
+        "sha256_in_prefix": "e2488d0a9e6df19953de0cbf864802ffb654566fd7f36451f69d6ec9bdf1eaaa",
+        "size_in_bytes": 3203
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/button.js",
+        "path_type": "hardlink",
+        "sha256": "b1fe76a5348d5a72d81507f7d854a9a8f03bd71d1c5dc74ebe288f4f84cffe5d",
+        "sha256_in_prefix": "b1fe76a5348d5a72d81507f7d854a9a8f03bd71d1c5dc74ebe288f4f84cffe5d",
+        "size_in_bytes": 482
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/category.js",
+        "path_type": "hardlink",
+        "sha256": "07a6f837392bc2285eeca86f1424b86bc87d25cd5ae58ada1c6a5797a2c3345a",
+        "sha256_in_prefix": "07a6f837392bc2285eeca86f1424b86bc87d25cd5ae58ada1c6a5797a2c3345a",
+        "size_in_bytes": 689
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/common.js",
+        "path_type": "hardlink",
+        "sha256": "c65a3a2b7c1028be09350278ae0540564c3237d202012f1424058878632c123a",
+        "sha256_in_prefix": "c65a3a2b7c1028be09350278ae0540564c3237d202012f1424058878632c123a",
+        "size_in_bytes": 486
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/content.js",
+        "path_type": "hardlink",
+        "sha256": "95f6bc2cfab60e9568e3aae87f01cb4d32bbfa2551dae59eb6d357ca51e9a88b",
+        "sha256_in_prefix": "95f6bc2cfab60e9568e3aae87f01cb4d32bbfa2551dae59eb6d357ca51e9a88b",
+        "size_in_bytes": 2627
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/icon.js",
+        "path_type": "hardlink",
+        "sha256": "309f8521d2d65b6d5f225118611da785d36aefd762c80b9bec2c6067e4633434",
+        "sha256_in_prefix": "309f8521d2d65b6d5f225118611da785d36aefd762c80b9bec2c6067e4633434",
+        "size_in_bytes": 4037
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/list_heading.js",
+        "path_type": "hardlink",
+        "sha256": "c84e982f2cf7f9b2d82cdb01c194b46406c4763bd4c2c29daf3a71f6cf75cd22",
+        "sha256_in_prefix": "c84e982f2cf7f9b2d82cdb01c194b46406c4763bd4c2c29daf3a71f6cf75cd22",
+        "size_in_bytes": 285
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/list_item.js",
+        "path_type": "hardlink",
+        "sha256": "9327eaca7b07fc7f77415a00eb8e831e9bee6e58fe3e82eb8f62608d9480f8a7",
+        "sha256_in_prefix": "9327eaca7b07fc7f77415a00eb8e831e9bee6e58fe3e82eb8f62608d9480f8a7",
+        "size_in_bytes": 284
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/menu.js",
+        "path_type": "hardlink",
+        "sha256": "6031c97e922f83e176122b634046ec118bf7f44152d27fcf9803fa07524ef2d1",
+        "sha256_in_prefix": "6031c97e922f83e176122b634046ec118bf7f44152d27fcf9803fa07524ef2d1",
+        "size_in_bytes": 1767
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/navbar.js",
+        "path_type": "hardlink",
+        "sha256": "f6d9c6c23e83e8d90aafcdc494322b1bbefacdb021b05fc34bb9d423c58242a1",
+        "sha256_in_prefix": "f6d9c6c23e83e8d90aafcdc494322b1bbefacdb021b05fc34bb9d423c58242a1",
+        "size_in_bytes": 9783
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/report_info.js",
+        "path_type": "hardlink",
+        "sha256": "0ca7da67906f3d093a6c50fa4f3eea824f3adeef958565abf0c56210768aa921",
+        "sha256_in_prefix": "0ca7da67906f3d093a6c50fa4f3eea824f3adeef958565abf0c56210768aa921",
+        "size_in_bytes": 538
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/result_info.js",
+        "path_type": "hardlink",
+        "sha256": "851d481c100b28cd950305ab52ebfa8594472bf2bc3775ad67d2aef2af853532",
+        "sha256_in_prefix": "851d481c100b28cd950305ab52ebfa8594472bf2bc3775ad67d2aef2af853532",
+        "size_in_bytes": 7292
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/result_view_button.js",
+        "path_type": "hardlink",
+        "sha256": "d33831899d70e3e276663fbb53a941eaba0b661f7970bc0089f320ab6adb22af",
+        "sha256_in_prefix": "d33831899d70e3e276663fbb53a941eaba0b661f7970bc0089f320ab6adb22af",
+        "size_in_bytes": 2051
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/rule_graph.js",
+        "path_type": "hardlink",
+        "sha256": "4b227f5c9d435e06369f10409580ec898f72dcefb27ec959060d7193d3797caa",
+        "sha256_in_prefix": "4b227f5c9d435e06369f10409580ec898f72dcefb27ec959060d7193d3797caa",
+        "size_in_bytes": 948
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/rule_info.js",
+        "path_type": "hardlink",
+        "sha256": "b7956fb09946a22a4f476797ddee07cab5203358711655cde66120ed8c0397e1",
+        "sha256_in_prefix": "b7956fb09946a22a4f476797ddee07cab5203358711655cde66120ed8c0397e1",
+        "size_in_bytes": 2786
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/search_results.js",
+        "path_type": "hardlink",
+        "sha256": "7c2942ff05c45d40217e2547fac162048786444c01967f95f6aa24f918493e3f",
+        "sha256_in_prefix": "7c2942ff05c45d40217e2547fac162048786444c01967f95f6aa24f918493e3f",
+        "size_in_bytes": 1183
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/stats.js",
+        "path_type": "hardlink",
+        "sha256": "91441e232e63cf9b0260301091f69518a97a4023606f97a4cc977878ad709326",
+        "sha256_in_prefix": "91441e232e63cf9b0260301091f69518a97a4023606f97a4cc977878ad709326",
+        "size_in_bytes": 459
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/subcategory.js",
+        "path_type": "hardlink",
+        "sha256": "10d5750928f1024494b91f5233dc9141c60d9beca9584b4167b81bb79763ac1b",
+        "sha256_in_prefix": "10d5750928f1024494b91f5233dc9141c60d9beca9584b4167b81bb79763ac1b",
+        "size_in_bytes": 419
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/components/toggle.js",
+        "path_type": "hardlink",
+        "sha256": "35deb478aa33d5337050548c4f01e61594568d995a478a6b73e1419c6f3f9b19",
+        "sha256_in_prefix": "35deb478aa33d5337050548c4f01e61594568d995a478a6b73e1419c6f3f9b19",
+        "size_in_bytes": 4031
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/index.html.jinja2",
+        "path_type": "hardlink",
+        "sha256": "2157b43fba0bed7d0717cb448ca9a875e3f68d1ab8d0f6bdec2676c03434aaab",
+        "sha256_in_prefix": "2157b43fba0bed7d0717cb448ca9a875e3f68d1ab8d0f6bdec2676c03434aaab",
+        "size_in_bytes": 3758
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/logo.svg",
+        "path_type": "hardlink",
+        "sha256": "efb331345b5846783544d572c73825b325405f4d274ea2e099d046e16c01e529",
+        "sha256_in_prefix": "efb331345b5846783544d572c73825b325405f4d274ea2e099d046e16c01e529",
+        "size_in_bytes": 1247
+      },
+      {
+        "_path": "site-packages/snakemake/report/html_reporter/template/style.css",
+        "path_type": "hardlink",
+        "sha256": "57274c23d2cf891f38b3d238a5e9778378aac8ee52e6a5f3a226b059462770ed",
+        "sha256_in_prefix": "57274c23d2cf891f38b3d238a5e9778378aac8ee52e6a5f3a226b059462770ed",
+        "size_in_bytes": 630
+      },
+      {
+        "_path": "site-packages/snakemake/report/rulegraph_spec.py",
+        "path_type": "hardlink",
+        "sha256": "2ba9679658d3381ce0ca81e272ae03ea9d460f991a4d7fad2c9396c5c09a071c",
+        "sha256_in_prefix": "2ba9679658d3381ce0ca81e272ae03ea9d460f991a4d7fad2c9396c5c09a071c",
+        "size_in_bytes": 1790
+      },
+      {
+        "_path": "site-packages/snakemake/resources.py",
+        "path_type": "hardlink",
+        "sha256": "19400418448192bb6d2be5479a528babdd3b33232a15c2d268f79727b9bff9df",
+        "sha256_in_prefix": "19400418448192bb6d2be5479a528babdd3b33232a15c2d268f79727b9bff9df",
+        "size_in_bytes": 25461
+      },
+      {
+        "_path": "site-packages/snakemake/ruleinfo.py",
+        "path_type": "hardlink",
+        "sha256": "ace94e9c47fc4f46f3e378119c2759eab983788819090703f46def45cecd1028",
+        "sha256_in_prefix": "ace94e9c47fc4f46f3e378119c2759eab983788819090703f46def45cecd1028",
+        "size_in_bytes": 4066
+      },
+      {
+        "_path": "site-packages/snakemake/rules.py",
+        "path_type": "hardlink",
+        "sha256": "fe9c754f8eba1149e7b61be87446ed3b4570c017ffcb4b0a2c2b1c5b7ac4f90b",
+        "sha256_in_prefix": "fe9c754f8eba1149e7b61be87446ed3b4570c017ffcb4b0a2c2b1c5b7ac4f90b",
+        "size_in_bytes": 50492
+      },
+      {
+        "_path": "site-packages/snakemake/scheduler.py",
+        "path_type": "hardlink",
+        "sha256": "4e5fb1191596460ea1cc4a21c1b5dcdbfcc438df9aba7444ac4e7fd3d31564d7",
+        "sha256_in_prefix": "4e5fb1191596460ea1cc4a21c1b5dcdbfcc438df9aba7444ac4e7fd3d31564d7",
+        "size_in_bytes": 33961
+      },
+      {
+        "_path": "site-packages/snakemake/script/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "91eca2555b1d32f5cc177322060867916f61fdaf7b172c3262db2f926f4e9d90",
+        "sha256_in_prefix": "91eca2555b1d32f5cc177322060867916f61fdaf7b172c3262db2f926f4e9d90",
+        "size_in_bytes": 58800
+      },
+      {
+        "_path": "site-packages/snakemake/settings/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/snakemake/settings/enums.py",
+        "path_type": "hardlink",
+        "sha256": "d24ec31221f7042c9f949b5c5a29fbc1786fb4d4385ea5c6391367c1c5de6814",
+        "sha256_in_prefix": "d24ec31221f7042c9f949b5c5a29fbc1786fb4d4385ea5c6391367c1c5de6814",
+        "size_in_bytes": 649
+      },
+      {
+        "_path": "site-packages/snakemake/settings/types.py",
+        "path_type": "hardlink",
+        "sha256": "f4a51bb23f3d946e4fbef5170a0f115e88de3ba100ba1c83b8209fab5af32d7d",
+        "sha256_in_prefix": "f4a51bb23f3d946e4fbef5170a0f115e88de3ba100ba1c83b8209fab5af32d7d",
+        "size_in_bytes": 15330
+      },
+      {
+        "_path": "site-packages/snakemake/shell.py",
+        "path_type": "hardlink",
+        "sha256": "1df409a4badd71746f221c3bf6f35d6f4294cc9e9954d78f6f30d402ae4d56bf",
+        "sha256_in_prefix": "1df409a4badd71746f221c3bf6f35d6f4294cc9e9954d78f6f30d402ae4d56bf",
+        "size_in_bytes": 14202
+      },
+      {
+        "_path": "site-packages/snakemake/snakemake.code-workspace",
+        "path_type": "hardlink",
+        "sha256": "a7472c8a6a846ca567ab02d5e6aa284c13d0ee2358dd9eef578eae0268eb4048",
+        "sha256_in_prefix": "a7472c8a6a846ca567ab02d5e6aa284c13d0ee2358dd9eef578eae0268eb4048",
+        "size_in_bytes": 61
+      },
+      {
+        "_path": "site-packages/snakemake/sourcecache.py",
+        "path_type": "hardlink",
+        "sha256": "9877fb55057d5de1807d86c58798aa65bd3b034025d86af2defb69432959753e",
+        "sha256_in_prefix": "9877fb55057d5de1807d86c58798aa65bd3b034025d86af2defb69432959753e",
+        "size_in_bytes": 14475
+      },
+      {
+        "_path": "site-packages/snakemake/spawn_jobs.py",
+        "path_type": "hardlink",
+        "sha256": "e8c8c9338aa9560dc435b9dd67d92110b3445bd85e04cc0cde84f01502023e12",
+        "sha256_in_prefix": "e8c8c9338aa9560dc435b9dd67d92110b3445bd85e04cc0cde84f01502023e12",
+        "size_in_bytes": 14419
+      },
+      {
+        "_path": "site-packages/snakemake/storage.py",
+        "path_type": "hardlink",
+        "sha256": "73ddfb079edad2ce2fb775249d9ac7dcf15747ea1f81be9bc1d3f0d7194c1d0c",
+        "sha256_in_prefix": "73ddfb079edad2ce2fb775249d9ac7dcf15747ea1f81be9bc1d3f0d7194c1d0c",
+        "size_in_bytes": 8069
+      },
+      {
+        "_path": "site-packages/snakemake/target_jobs.py",
+        "path_type": "hardlink",
+        "sha256": "38bb59c45f7795fc6a26c9e45ed84b9a28ed240523e866c160e1b2725acd9cd0",
+        "sha256_in_prefix": "38bb59c45f7795fc6a26c9e45ed84b9a28ed240523e866c160e1b2725acd9cd0",
+        "size_in_bytes": 919
+      },
+      {
+        "_path": "site-packages/snakemake/template_rendering/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a21bce75b0d2a75e0e065e3061875aaac8a247a30a7b4190f9a595571ef17af4",
+        "sha256_in_prefix": "a21bce75b0d2a75e0e065e3061875aaac8a247a30a7b4190f9a595571ef17af4",
+        "size_in_bytes": 2605
+      },
+      {
+        "_path": "site-packages/snakemake/template_rendering/jinja2.py",
+        "path_type": "hardlink",
+        "sha256": "edde814fb9cfd8ff2c99daf8024732116a7f7e66554602fa77bc0fb5a082a864",
+        "sha256_in_prefix": "edde814fb9cfd8ff2c99daf8024732116a7f7e66554602fa77bc0fb5a082a864",
+        "size_in_bytes": 543
+      },
+      {
+        "_path": "site-packages/snakemake/template_rendering/yte.py",
+        "path_type": "hardlink",
+        "sha256": "9cede4909eb3ad34770e1142825d6e8a8e4ee835aa0864539c1b3e57dbb34e79",
+        "sha256_in_prefix": "9cede4909eb3ad34770e1142825d6e8a8e4ee835aa0864539c1b3e57dbb34e79",
+        "size_in_bytes": 527
+      },
+      {
+        "_path": "site-packages/snakemake/unit_tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "3877d96ad182e111cd987fe72df4afc169a75492488f1b5b947071f4bfe4493d",
+        "sha256_in_prefix": "3877d96ad182e111cd987fe72df4afc169a75492488f1b5b947071f4bfe4493d",
+        "size_in_bytes": 4043
+      },
+      {
+        "_path": "site-packages/snakemake/unit_tests/templates/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/snakemake/unit_tests/templates/common.py.jinja2",
+        "path_type": "hardlink",
+        "sha256": "36d11e4f8bc986d0ef53be1a9efd7c7ab1136297cabbf5220ac2b5a044185d56",
+        "sha256_in_prefix": "36d11e4f8bc986d0ef53be1a9efd7c7ab1136297cabbf5220ac2b5a044185d56",
+        "size_in_bytes": 1626
+      },
+      {
+        "_path": "site-packages/snakemake/unit_tests/templates/ruletest.py.jinja2",
+        "path_type": "hardlink",
+        "sha256": "d8f0f60b8b486e56e32fcc0b130098be31e8b4309a8d470fccfb139069373c8e",
+        "sha256_in_prefix": "d8f0f60b8b486e56e32fcc0b130098be31e8b4309a8d470fccfb139069373c8e",
+        "size_in_bytes": 1650
+      },
+      {
+        "_path": "site-packages/snakemake/utils.py",
+        "path_type": "hardlink",
+        "sha256": "53d68e76039d142a0200455f04ff5ec9eec9dbcb6397a3e53a965e3f8bd58d54",
+        "sha256_in_prefix": "53d68e76039d142a0200455f04ff5ec9eec9dbcb6397a3e53a965e3f8bd58d54",
+        "size_in_bytes": 32191
+      },
+      {
+        "_path": "site-packages/snakemake/workflow.py",
+        "path_type": "hardlink",
+        "sha256": "36e2a1172aefda6ac477a4c6b5234940a7396b5a4bde61552b64ebfabf1036e5",
+        "sha256_in_prefix": "36e2a1172aefda6ac477a4c6b5234940a7396b5a4bde61552b64ebfabf1036e5",
+        "size_in_bytes": 87053
+      },
+      {
+        "_path": "site-packages/snakemake/wrapper.py",
+        "path_type": "hardlink",
+        "sha256": "2c9f9e51bab84f8632ab244f929bcf89125b753df2fddbafda9a0fdb26c0ec62",
+        "sha256_in_prefix": "2c9f9e51bab84f8632ab244f929bcf89125b753df2fddbafda9a0fdb26c0ec62",
+        "size_in_bytes": 3263
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/__main__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/_version.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/api.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/assets/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/benchmark.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/caching/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/caching/__pycache__/hash.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/caching/__pycache__/local.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/caching/__pycache__/storage.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/checkpoints.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/cli.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/common/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/common/__pycache__/argparse.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/common/__pycache__/configfile.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/common/__pycache__/git.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/common/__pycache__/prefix_lookup.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/common/__pycache__/tbdstring.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/common/tests/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/common/tests/testcases/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/common/tests/testcases/groups/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/common/tests/testcases/simple/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/common/__pycache__/typing.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/common/__pycache__/workdir_handler.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/cwl.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/dag.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/decorators.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/deployment/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/deployment/__pycache__/conda.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/deployment/__pycache__/containerize.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/deployment/__pycache__/env_modules.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/deployment/__pycache__/singularity.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/exceptions.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/executors/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/executors/__pycache__/dryrun.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/executors/__pycache__/google_lifesciences_helper.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/executors/__pycache__/local.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/executors/__pycache__/touch.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/gui.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/io/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/io/flags/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/io/flags/__pycache__/access_patterns.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/io/__pycache__/fmt.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/ioflags.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/branch.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/collect.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/evaluate.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/exists.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/input.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/lookup.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/rule_items_proxy.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/ioutils/__pycache__/subpath.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/jobs.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/linting/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/linting/__pycache__/links.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/linting/__pycache__/rules.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/linting/__pycache__/snakefiles.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/logging.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/modules.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/notebook.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/output_index.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/parser.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/path_modifier.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/persistence.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/profiles.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/AzBlob.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/EGA.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/FTP.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/GS.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/HTTP.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/NCBI.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/S3.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/S3Mocked.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/SFTP.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/XRootD.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/dropbox.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/gfal.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/gridftp.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/iRODS.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/webdav.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/remote/__pycache__/zenodo.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/__pycache__/common.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/html_reporter/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/html_reporter/__pycache__/common.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/categories.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/common.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/configfiles.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/packages.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/results.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/rulegraph.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/rules.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/runtimes.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/html_reporter/data/__pycache__/timeline.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/html_reporter/template/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/html_reporter/template/components/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/report/__pycache__/rulegraph_spec.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/resources.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/ruleinfo.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/rules.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/scheduler.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/script/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/settings/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/settings/__pycache__/enums.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/settings/__pycache__/types.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/shell.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/sourcecache.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/spawn_jobs.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/storage.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/target_jobs.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/template_rendering/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/template_rendering/__pycache__/jinja2.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/template_rendering/__pycache__/yte.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/unit_tests/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/unit_tests/templates/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/utils.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/workflow.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/snakemake/__pycache__/wrapper.cpython-312.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "bin/snakemake",
+        "path_type": "unix_python_entry_point"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "snakemake-minimal==9.1.9=pyhdfd78af_0",
+  "sha256": "e4c4619a7e43832f48a26764eac1ba7854ef7406d4e7a2c7225af3eec07f39f1",
+  "size": 868749,
+  "subdir": "noarch",
+  "timestamp": 1744024735000,
+  "url": "https://conda.anaconda.org/bioconda/noarch/snakemake-minimal-9.1.9-pyhdfd78af_0.tar.bz2",
+  "version": "9.1.9"
+}

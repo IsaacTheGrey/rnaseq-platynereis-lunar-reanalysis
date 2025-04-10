@@ -1,0 +1,38 @@
+{
+  "build": "hdfd78af_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda",
+  "constrains": [],
+  "depends": [
+    "eido",
+    "pandas",
+    "peppy",
+    "pygments",
+    "slack_sdk",
+    "snakemake-minimal 9.1.9.*"
+  ],
+  "extracted_package_dir": "/home/federico/.conda/pkgs/snakemake-9.1.9-hdfd78af_0",
+  "files": [],
+  "fn": "snakemake-9.1.9-hdfd78af_0.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/home/federico/.conda/pkgs/snakemake-9.1.9-hdfd78af_0",
+    "type": 1
+  },
+  "md5": "8536cb57f0e46ea6b85d3ee395bb9319",
+  "name": "snakemake",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/federico/.conda/pkgs/snakemake-9.1.9-hdfd78af_0.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "snakemake==9.1.9=hdfd78af_0",
+  "sha256": "5adfd4368b19e56ef8d5afa30360058944d3785c2511dcb98f9a0b53ca719384",
+  "size": 9391,
+  "subdir": "noarch",
+  "timestamp": 1744024736000,
+  "url": "https://conda.anaconda.org/bioconda/noarch/snakemake-9.1.9-hdfd78af_0.tar.bz2",
+  "version": "9.1.9"
+}
