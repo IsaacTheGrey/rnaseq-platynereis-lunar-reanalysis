@@ -11,3 +11,4 @@ __pycache__/
 .Rhistory
 .Rproj.user/
 .env
+.snakemake/
