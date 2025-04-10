@@ -1,7 +1,7 @@
 import os
 
 # Load configuration
-configfile: "../config.yaml"
+configfile: "config.yml"
 
 # Determine sample types
 SAMPLES_PE, = glob_wildcards("data/fastq/{sample}_R1.fastq.gz")
@@ -9,9 +9,10 @@ SAMPLES_SE, = glob_wildcards("data/fastq/{sample}.fastq.gz")
 
 rule all:
     input:
-        expand("data/star/{{sample}}.Aligned.sortedByCoord.out.bam", sample=SAMPLES_PE + SAMPLES_SE),
-        expand("data/salmon/{{sample}}/quant.sf", sample=SAMPLES_PE + SAMPLES_SE),
+        expand("data/star/{sample}.Aligned.sortedByCoord.out.bam", sample=SAMPLES_PE + SAMPLES_SE),
+        expand("data/salmon/{sample}/quant.sf", sample=SAMPLES_PE + SAMPLES_SE),
         "results/multiqc/multiqc_report.html"
+
 
 # === INDEX RULES ===
 rule build_star_index:
