@@ -1,29 +1,42 @@
 #!/bin/bash
+start_all=$(date +%s)
 
-# Input and output directories
 IN_DIR=~/projects/rnaseq-platynereis-lunar-reanalysis/data/raw
-OUT_DIR=~/bioinformatics/rnaseq-platynereis-lunar-reanalysis/data/raw
+OUT_DIR=~/projects/rnaseq-platynereis-lunar-reanalysis/data/fastq
 
 mkdir -p "$OUT_DIR"
 
-for bam in "$IN_DIR"/*.bam; do
+export OUT_DIR  # Make available inside GNU parallel jobs
+
+process_bam () {
+    bam=$1
     base=$(basename "$bam" .bam)
+    fq="$OUT_DIR/${base}.fastq"
 
-    echo "Processing $base"
+    echo "[$base] Starting at $(date)"
+    start_time=$(date +%s)
 
-    # Sort BAM by read name
-    samtools sort -n -@ 16 -o "$OUT_DIR/${base}_sorted.bam" "$bam"
+    # Run Picard with up to 64 GB RAM
+    picard -Xmx64G SamToFastq \
+        I="$bam" \
+        FASTQ="$fq" \
+        VALIDATION_STRINGENCY=SILENT \
+        QUIET=true
 
-    # Convert to FASTQ (single-end in this case)
-    bedtools bamtofastq \
-      -i "$OUT_DIR/${base}_sorted.bam" \
-      -fq "$OUT_DIR/${base}.fastq"
+    # Compress if successful
+    if [[ -s "$fq" ]]; then
+        gzip "$fq"
+        end_time=$(date +%s)
+        runtime=$((end_time - start_time))
+        echo "✅ [$base] Completed in ${runtime}s"
+    else
+        echo "❌ [$base] Failed: FASTQ not created"
+    fi
+}
 
+export -f process_bam
 
-    # Compress the FASTQ files
-    gzip "$OUT_DIR/${base}_R1.fastq"
-    gzip "$OUT_DIR/${base}_R2.fastq"
-
-    # Cleanup
-    rm "$OUT_DIR/${base}_sorted.bam"
-done
+# Run 8 in parallel — change to match your CPU count
+find "$IN_DIR" -name "*.bam" | parallel -j 8 process_bam
+end_all=$(date +%s)
+echo "🕒 Total time: $((end_all - start_all)) seconds"
