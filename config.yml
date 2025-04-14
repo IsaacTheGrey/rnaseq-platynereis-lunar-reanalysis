@@ -3,7 +3,7 @@
 # Paths to reference files
 genome_fasta: references/pdumv021_genome_v2.fa
 gtf: references/pdumv021_v2.gtf
-transcriptome: references/referece-transcriptome_sequences.fa
+transcriptome: references/reference-transcriptome_sequences.fa
 
 # Index folders
 star_index: data/star_index
@@ -12,7 +12,7 @@ salmon_index: data/salmon_index
 # Trimming parameters
 phred_encoding: 33
 min_length: 50 # I usually set this to half of the expected read size
-sliding_window: 4:20
+sliding_window: "4:20"
 leading: 20
 trailing: 20
 
@@ -20,3 +20,6 @@ trailing: 20
 threads_trimming: 4
 threads_star: 8
 threads_salmon: 8
+
+# Sample definitions
+read_type: SE # or SE

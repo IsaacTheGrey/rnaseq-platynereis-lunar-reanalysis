@@ -2,19 +2,25 @@ import os
 
 # Load configuration
 configfile: "config.yml"
+READ_TYPE = config["read_type"]
 
-# Determine sample types
-SAMPLES_PE, = glob_wildcards("data/fastq/{sample}_R1.fastq.gz")
-SAMPLES_SE, = glob_wildcards("data/fastq/{sample}.fastq.gz")
+# Dynamically get samples based on read type
+if READ_TYPE == "PE":
+    SAMPLES, = glob_wildcards("data/fastq/{sample}_R1.fastq.gz")
+elif READ_TYPE == "SE":
+    SAMPLES, = glob_wildcards("data/fastq/{sample}.fastq.gz")
+else:
+    raise ValueError("read_type must be 'PE' or 'SE'")
 
+
+# === FINAL TARGETS ===
 rule all:
     input:
-        expand("data/star/{sample}.Aligned.sortedByCoord.out.bam", sample=SAMPLES_PE + SAMPLES_SE),
-        expand("data/salmon/{sample}/quant.sf", sample=SAMPLES_PE + SAMPLES_SE),
+        expand("data/star/{sample}.Aligned.sortedByCoord.out.bam", sample=SAMPLES),
+        expand("data/salmon/{sample}/quant.sf", sample=SAMPLES),
         "results/multiqc/multiqc_report.html"
 
-
-# === INDEX RULES ===
+# === STAR INDEX ===
 rule build_star_index:
     input:
         genome=config["genome_fasta"],
@@ -38,6 +44,7 @@ rule build_star_index:
         touch {output}
         """
 
+# === SALMON INDEX ===
 rule build_salmon_index:
     input:
         config["transcriptome"]
@@ -55,7 +62,8 @@ rule build_salmon_index:
         cp {input} {output}
         """
 
-# === TRIMMING ===
+# === TRIMMING RULES ===
+
 rule trim_single_end:
     input:
         fq="data/fastq/{sample}.fastq.gz"
@@ -70,7 +78,8 @@ rule trim_single_end:
         """
         trimmomatic SE -threads {threads} -phred{config[phred_encoding]} \
         {input.fq} {output.trimmed} \
-        LEADING:{config[leading]} TRAILING:{config[trailing]} SLIDINGWINDOW:{config[sliding_window]} MINLEN:{config[min_length]} &> {log}
+        LEADING:{config[leading]} TRAILING:{config[trailing]} \
+        SLIDINGWINDOW:{config[sliding_window]} MINLEN:{config[min_length]} &> {log}
         """
 
 rule trim_paired_end:
@@ -93,14 +102,15 @@ rule trim_paired_end:
         {input.r1} {input.r2} \
         {output.r1_paired} {output.r1_unpaired} \
         {output.r2_paired} {output.r2_unpaired} \
-        LEADING:{config[leading]} TRAILING:{config[trailing]} SLIDINGWINDOW:{config[sliding_window]} MINLEN:{config[min_length]} &> {log}
+        LEADING:{config[leading]} TRAILING:{config[trailing]} \
+        SLIDINGWINDOW:{config[sliding_window]} MINLEN:{config[min_length]} &> {log}
         """
 
 # === STAR ALIGNMENT ===
-rule star_align:
+rule star_align_se:
     input:
         index=os.path.join(config["star_index"], "SA"),
-        fq=lambda wildcards: f"data/trimmed/{wildcards.sample}_trimmed.fastq.gz" if os.path.exists(f"data/fastq/{wildcards.sample}.fastq.gz") else [f"data/trimmed/{wildcards.sample}_R1_paired.fastq.gz", f"data/trimmed/{wildcards.sample}_R2_paired.fastq.gz"]
+        fq="data/trimmed/{sample}_trimmed.fastq.gz"
     output:
         bam="data/star/{sample}.Aligned.sortedByCoord.out.bam"
     threads: config["threads_star"]
@@ -118,11 +128,33 @@ rule star_align:
              --outSAMtype BAM SortedByCoordinate &> {log}
         """
 
-# === SALMON QUANT ===
-rule salmon_quant:
+rule star_align_pe:
+    input:
+        index=os.path.join(config["star_index"], "SA"),
+        fq1="data/trimmed/{sample}_R1_paired.fastq.gz",
+        fq2="data/trimmed/{sample}_R2_paired.fastq.gz"
+    output:
+        bam="data/star/{sample}.Aligned.sortedByCoord.out.bam"
+    threads: config["threads_star"]
+    conda:
+        "../env/star.yml"
+    log:
+        "logs/star/{sample}.log"
+    shell:
+        """
+        STAR --runThreadN {threads} \
+             --genomeDir {config[star_index]} \
+             --readFilesIn {input.fq1} {input.fq2} \
+             --readFilesCommand zcat \
+             --outFileNamePrefix data/star/{wildcards.sample}. \
+             --outSAMtype BAM SortedByCoordinate &> {log}
+        """
+
+# === SALMON QUANTIFICATION ===
+rule salmon_quant_se:
     input:
         index=os.path.join(config["salmon_index"], "complete_ref_transcripts.fa"),
-        fq=lambda wildcards: f"data/trimmed/{wildcards.sample}_trimmed.fastq.gz" if os.path.exists(f"data/fastq/{wildcards.sample}.fastq.gz") else [f"data/trimmed/{wildcards.sample}_R1_paired.fastq.gz", f"data/trimmed/{wildcards.sample}_R2_paired.fastq.gz"]
+        fq="data/trimmed/{sample}_trimmed.fastq.gz"
     output:
         quant="data/salmon/{sample}/quant.sf"
     threads: config["threads_salmon"]
@@ -133,17 +165,36 @@ rule salmon_quant:
     shell:
         """
         salmon quant -i {config[salmon_index]} -l A \
-        {'-r ' + input.fq if isinstance(input.fq, str) else '-1 ' + input.fq[0] + ' -2 ' + input.fq[1]} \
-        -p {threads} -o data/salmon/{wildcards.sample} &> {log}
+        -r {input.fq} -p {threads} \
+        -o data/salmon/{wildcards.sample} &> {log}
         """
 
-# === MULTIQC ===
+rule salmon_quant_pe:
+    input:
+        index=os.path.join(config["salmon_index"], "complete_ref_transcripts.fa"),
+        fq1="data/trimmed/{sample}_R1_paired.fastq.gz",
+        fq2="data/trimmed/{sample}_R2_paired.fastq.gz"
+    output:
+        quant="data/salmon/{sample}/quant.sf"
+    threads: config["threads_salmon"]
+    conda:
+        "../env/salmon.yml"
+    log:
+        "logs/salmon/{sample}.log"
+    shell:
+        """
+        salmon quant -i {config[salmon_index]} -l A \
+        -1 {input.fq1} -2 {input.fq2} -p {threads} \
+        -o data/salmon/{wildcards.sample} &> {log}
+        """
+
+# === MULTIQC REPORT ===
 rule multiqc:
     input:
-        expand("logs/trimming/{{sample}}_se.log", sample=SAMPLES_SE) +
-        expand("logs/trimming/{{sample}}_pe.log", sample=SAMPLES_PE) +
-        expand("logs/star/{{sample}}.log", sample=SAMPLES_PE + SAMPLES_SE) +
-        expand("logs/salmon/{{sample}}.log", sample=SAMPLES_PE + SAMPLES_SE)
+        expand("logs/trimming/{sample}_pe.log", sample=SAMPLES) if READ_TYPE == "PE"
+        else expand("logs/trimming/{sample}_se.log", sample=SAMPLES),
+        expand("logs/star/{sample}.log", sample=SAMPLES),
+        expand("logs/salmon/{sample}.log", sample=SAMPLES)
     output:
         html="results/multiqc/multiqc_report.html"
     conda:
@@ -153,4 +204,3 @@ rule multiqc:
         mkdir -p results/multiqc
         multiqc logs -o results/multiqc
         """
-
