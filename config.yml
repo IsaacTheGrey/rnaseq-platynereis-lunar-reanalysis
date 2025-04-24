@@ -23,3 +23,4 @@ threads_salmon: 8
 
 # Sample definitions
 read_type: SE # or SE
+strandness: 0      # 0 = unstranded, 1 = stranded forward, 2 = stranded reverse
