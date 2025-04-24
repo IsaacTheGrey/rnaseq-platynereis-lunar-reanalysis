@@ -1,5 +1,5 @@
 # rnaseq-platynereis-lunar-reanalysis
-To run this pipeline, install snakemake in a conda environment and run 
+To run this pipeline, install snakemake and run 
 ```bash
 snakemake --cores <cores> --use-conda
 ```
