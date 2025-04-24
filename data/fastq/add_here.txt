@@ -1,0 +1,1 @@
+Add the fastq (or fastq.gz) files coming from the sequencing to this folder
