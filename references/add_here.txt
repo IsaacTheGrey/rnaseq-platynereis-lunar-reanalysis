@@ -1,0 +1,1 @@
+Add to this folder the genome fasta file, its corresponding gtf file and the transcriptome fasta file
