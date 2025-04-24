@@ -6,7 +6,7 @@ READ_TYPE = config["read_type"]
 
 # Dynamically get samples based on read type
 if READ_TYPE == "PE":
-    SAMPLES, = glob_wildcards("data/fastq/{sample}_R1.fastq.gz")
+    SAMPLES, = glob_wildcards("data/fastq/{sample}_R1_001.fastq.gz")
 elif READ_TYPE == "SE":
     SAMPLES, = glob_wildcards("data/fastq/{sample}.fastq.gz")
 else:
@@ -18,10 +18,10 @@ rule all:
     input:
         expand("data/star/{sample}.Aligned.sortedByCoord.out.bam", sample=SAMPLES),
         expand("data/salmon/{sample}/quant.sf", sample=SAMPLES),
-        "results/multiqc/multiqc_report.html"
+        expand("data/counts/{sample}.featureCounts.txt", sample=SAMPLES)
 
 # === STAR INDEX ===
-rule build_star_index:
+rule build_star_index:  
     input:
         genome=config["genome_fasta"],
         gtf=config["gtf"]
@@ -84,8 +84,8 @@ rule trim_single_end:
 
 rule trim_paired_end:
     input:
-        r1="data/fastq/{sample}_R1.fastq.gz",
-        r2="data/fastq/{sample}_R2.fastq.gz"
+        r1="data/fastq/{sample}_R1_001.fastq.gz",
+        r2="data/fastq/{sample}_R2_001.fastq.gz"
     output:
         r1_paired="data/trimmed/{sample}_R1_paired.fastq.gz",
         r1_unpaired="data/trimmed/{sample}_R1_unpaired.fastq.gz",
@@ -188,19 +188,73 @@ rule salmon_quant_pe:
         -o data/salmon/{wildcards.sample} &> {log}
         """
 
+# === featureCounts quantification for STAR ===
+
+rule featurecounts:
+    input:
+        bam=lambda wildcards: f"data/star/{wildcards.sample}.Aligned.sortedByCoord.out.bam",
+        gtf=lambda wildcards: config["gtf"]
+    output:
+        "data/counts/{sample}.featureCounts.txt"
+    threads: 4
+    conda:
+        "../env/featurecounts.yml"
+    log:
+        "logs/featurecounts/{sample}.log"
+    params:
+        paired_flags="-p -B -C" if READ_TYPE == "PE" else ""
+    shell:
+        """
+        mkdir -p data/counts logs/featurecounts
+        featureCounts -T {threads} -a {input.gtf} -o {output} \
+            -g gene_id -t exon -s {config[strandness]} \
+            {params.paired_flags} \
+            {input.bam} &> {log}
+        """
+
+
+
+
+
+### 
+rule merge_featurecounts:
+    input:
+        counts=expand("data/counts/{sample}.featureCounts.txt", sample=SAMPLES)
+    output:
+        matrix="data/counts/merged_gene_counts.tsv"
+    conda:
+        "../env/featurecounts.yml"
+    params:
+        tmpcols=lambda wildcards, input: " ".join(f"{f}.tmpcol" for f in input.counts)
+    shell:
+        """
+        cut -f1,7 {input.counts[0]} > {output}.tmp
+        for f in {input.counts}; do
+            cut -f7 $f | tail -n +3 > $f.tmpcol;
+        done
+        paste {output}.tmp {params.tmpcols} > {output}
+        rm -f {output}.tmp *.tmpcol
+        """
+ ###
+
+### 
 # === MULTIQC REPORT ===
 rule multiqc:
     input:
-        expand("logs/trimming/{sample}_pe.log", sample=SAMPLES) if READ_TYPE == "PE"
-        else expand("logs/trimming/{sample}_se.log", sample=SAMPLES),
+        expand("data/counts/{sample}.featureCounts.txt", sample=SAMPLES),
+        expand("logs/trimming/{sample}_se.log", sample=SAMPLES) if READ_TYPE == "SE"
+        else expand("logs/trimming/{sample}_pe.log", sample=SAMPLES),
         expand("logs/star/{sample}.log", sample=SAMPLES),
         expand("logs/salmon/{sample}.log", sample=SAMPLES)
     output:
         html="results/multiqc/multiqc_report.html"
     conda:
         "../env/multiqc.yml"
+    log:
+        "logs/multiqc/multiqc.log"
     shell:
         """
         mkdir -p results/multiqc
-        multiqc logs -o results/multiqc
+        multiqc . -o results/multiqc &> {log}
         """
+         ###
