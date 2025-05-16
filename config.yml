@@ -22,5 +22,5 @@ threads_star: 8
 threads_salmon: 8
 
 # Sample definitions
-read_type: SE # or SE
+read_type: SE # or PE
 strandness: 0      # 0 = unstranded, 1 = stranded forward, 2 = stranded reverse
